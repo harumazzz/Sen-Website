@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "title": "Sen - PvZ2 modding工具",
+    "description": "Sen 就是您所需要的！全能的 PvZ2 modding 工具。它易于使用，有很多功能可以帮助您创建自己的 mod。",
+    "about": {
+      "title": "关于 Sen - PvZ2 Modding工具",
+      "description": "了解 Sen，全能的 PvZ2 modding 工具。发现我们的功能、支持的模块、技术堆栈和平台可用性。",
+      "keywords": "关于 Sen、PvZ2 modding、modding 工具功能、游戏 modding、开源"
+    },
+    "download": {
+      "title": "下载 Sen | Sen - PvZ2 Modding工具",
+      "description": "为 Windows、Android 和其他平台下载 Sen。获取最新版本，立即开始 modding PvZ2！"
+    },
+    "changelog": {
+      "title": "更改日志 | Sen - PvZ2 Modding工具",
+      "description": "查看 Sen 的完整更改日志。查看所有更新、新功能、错误修复以及所有版本的改进。"
+    },
+    "notFound": {
+      "title": "404 - 找不到页面 | Sen",
+      "description": "您要查找的页面不存在。"
+    }
+  },
+  "nav": {
+    "home": "主页",
+    "about": "关于",
+    "download": "下载",
+    "changelog": "更改日志",
+    "collapse": "收起",
+    "welcomeDescription": "欢迎来到 Sen - PvZ2 Modding工具",
+    "aboutDescription": "了解更多关于 Sen 及其功能",
+    "downloadDescription": "为您的平台下载 Sen",
+    "changelogDescription": "查看发行说明和更新"
+  },
+  "hero": {
+    "tagline": "使用 Sen 更快地构建你的 PvZ2 mod！",
+    "description": "Sen 就是您所需要的！全能的 PvZ2 modding 工具。它易于使用，有很多功能可以帮助您创建自己的 mod。",
+    "downloadButton": "下载",
+    "discordButton": "Discord 服务器"
+  },
+  "about": {
+    "pageTitle": "关于 Sen - PvZ2 Modding工具",
+    "mainTitle": "Sen.Environment",
+    "subtitle": "PvZ2 的终极 modding 工具",
+    "sections": {
+      "about": {
+        "title": "关于",
+        "description": "Sen.Environment 是 PvZ2 的 modding 工具，旨在简化 modding 过程并增强游戏体验。"
+      },
+      "platform": {
+        "title": "平台支持",
+        "windows": "Windows 10+",
+        "windowsDescription": "Sen.Environment 与 Windows 完全兼容，为 PvZ2 modding 提供无缝体验。",
+        "android": "Android 10.0+",
+        "androidDescription": "Sen.Environment 也可在 Android 上使用，允许用户在其首选平台上享受 modding。"
+      },
+      "modules": {
+        "title": "模块",
+        "kernel": "内核",
+        "kernelDescription": "Sen.Environment 的核心，提供基本功能和低级操作。",
+        "shell": "外壳",
+        "shellDescription": "用于命令处理和与内核交互的用户界面。",
+        "script": "脚本",
+        "scriptDescription": "用于自动化和脚本编写功能的模块，允许用户创建自定义脚本。",
+        "modding": "Modding",
+        "moddingDescription": "用于游戏文件修改和管理的模块，允许用户轻松创建和管理 mod。"
+      },
+      "tech": {
+        "title": "使用的技术",
+        "meson": "Meson",
+        "mesonDescription": "Meson 是一个设计快速且用户友好的构建系统。它用于构建 Sen 项目。",
+        "flutter": "Flutter",
+        "flutterDescription": "Flutter 是一个用于构建 Sen 项目的 UI 工具包。它允许您为移动、网络和桌面应用程序构建漂亮且响应迅速的用户界面。"
+      }
+    }
+  },
+  "download": {
+    "title": "下载 Sen",
+    "subtitle": "选择最适合您设备的版本",
+    "downloadButton": "下载",
+    "platform": {
+      "windows": "Windows",
+      "android": "Android"
+    },
+    "stats": {
+      "downloads": "下载",
+      "file": "文件：",
+      "version": "版本"
+    },
+    "systemRequirements": {
+      "title": "系统要求",
+      "windows": {
+        "os": "Windows 10/11 (64-bit)",
+        "runtime": "C++ Redistributable",
+        "runtimeValue": "2015 和 2017",
+        "memory": "内存",
+        "memoryValue": "4 GB RAM",
+        "storage": "存储",
+        "storageValue": "200 MB 可用空间"
+      },
+      "android": {
+        "os": "Android 8.0 或更高版本",
+        "memory": "内存",
+        "memoryValue": "2 GB RAM",
+        "storage": "存储",
+        "storageValue": "100 MB 可用空间",
+        "permissions": "权限",
+        "permissionsValue": "存储访问权限、互联网"
+      },
+      "info": "为获得最佳体验，我们建议使用最新版本的操作系统。"
+    },
+    "installation": {
+      "title": "安装指南",
+      "step1": {
+        "title": "下载安装程序",
+        "description": "单击上方平台的下载按钮。"
+      },
+      "step2": {
+        "title": "运行安装程序",
+        "description": "双击下载的文件以启动安装过程。"
+      },
+      "step3": {
+        "title": "按照设置向导进行操作",
+        "description": "接受许可协议并选择安装选项。"
+      },
+      "step4": {
+        "title": "启动 Sen",
+        "description": "安装后，您可以从桌面或开始菜单启动 Sen。"
+      }
+    }
+  },
+  "changelog": {
+    "title": "更改日志",
+    "subtitle": "了解最新的更改和改进"
+  },
+  "footer": {
+    "quickLinks": "快速链接",
+    "resources": "资源",
+    "followUs": "关注我们",
+    "copyright": "© 版权 {year} Haruma。版权所有。",
+    "links": {
+      "home": "主页",
+      "download": "下载",
+      "changelog": "更改日志",
+      "contact": "联系我们",
+      "documentation": "文档",
+      "support": "支持",
+      "community": "社区论坛",
+      "faq": "常见问题"
+    }
+  },
+  "notFound": {
+    "title": "找不到页面",
+    "description": "哎呀！您要查找的页面不存在或已移动。",
+    "suggestions": "您可能想尝试：",
+    "goHome": "转到主页",
+    "visitDownloads": "访问下载",
+    "helpText": "需要帮助？查看我们的",
+    "aboutPage": "关于页面",
+    "or": "或查看",
+    "changelogLink": "更改日志"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "retry": "重试",
+    "close": "关闭",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "back": "返回",
+    "next": "下一个",
+    "previous": "上一个",
+    "search": "搜索",
+    "filter": "过滤",
+    "sort": "排序",
+    "version": "版本",
+    "sen": "Sen"
+  }
+}
