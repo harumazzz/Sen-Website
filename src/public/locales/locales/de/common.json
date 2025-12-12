@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "title": "Sen - PvZ2 Modding-Tool",
+    "description": "Sen ist genau das, was du brauchst! Das All-in-One-Tool zum Modden von PvZ2. Es ist einfach zu verwenden und verfügt über viele Funktionen, die dir beim Erstellen deiner eigenen Mods helfen.",
+    "about": {
+      "title": "Über Sen - PvZ2 Modding-Tool",
+      "description": "Erfahre mehr über Sen, das All-in-One-PvZ2-Modding-Tool. Entdecke unsere Funktionen, unterstützte Module, Technologie-Stack und Plattformverfügbarkeit.",
+      "keywords": "Über Sen, PvZ2-Modding, Modding-Tool-Funktionen, Spiel-Modding, Open Source"
+    },
+    "download": {
+      "title": "Sen herunterladen | Sen - PvZ2 Modding-Tool",
+      "description": "Laden Sie Sen für Windows, Android und andere Plattformen herunter. Laden Sie die neueste Version herunter und beginnen Sie noch heute mit dem Modden von PvZ2!"
+    },
+    "changelog": {
+      "title": "Changelog | Sen - PvZ2 Modding-Tool",
+      "description": "Sieh dir das vollständige Changelog von Sen an. Sieh dir alle Updates, neue Funktionen, Bugfixes und Verbesserungen in allen Versionen an."
+    },
+    "notFound": {
+      "title": "404 - Seite nicht gefunden | Sen",
+      "description": "Die gesuchte Seite existiert nicht."
+    }
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über",
+    "download": "Herunterladen",
+    "changelog": "Changelog",
+    "collapse": "Minimieren",
+    "welcomeDescription": "Willkommen bei Sen - PvZ2 Modding-Tool",
+    "aboutDescription": "Erfahre mehr über Sen und seine Funktionen",
+    "downloadDescription": "Lade Sen für deine Plattform herunter",
+    "resourcesDescription": "Zugriff auf Worldmap-Ressourcen für PvZ2-Modding",
+    "changelogDescription": "Sieh dir Release-Notizen und Updates an"
+  },
+  "hero": {
+    "tagline": "Erstelle deine PvZ2-Mods schneller mit Sen!",
+    "description": "Sen ist genau das, was du brauchst! Das All-in-One-Tool zum Modden von PvZ2. Es ist einfach zu verwenden und verfügt über viele Funktionen, die dir beim Erstellen deiner eigenen Mods helfen.",
+    "downloadButton": "Herunterladen",
+    "discordButton": "Discord-Server"
+  },
+  "about": {
+    "pageTitle": "Über Sen - PvZ2 Modding-Tool",
+    "mainTitle": "Sen.Environment",
+    "subtitle": "Das ultimative Modding-Tool für PvZ2",
+    "sections": {
+      "about": {
+        "title": "Über",
+        "description": "Sen.Environment ist ein Modding-Tool für PvZ2, das den Modding-Prozess vereinfachen und das Spielerlebnis verbessern soll."
+      },
+      "platform": {
+        "title": "Plattformunterstützung",
+        "windows": "Windows 10+",
+        "windowsDescription": "Sen.Environment ist vollständig mit Windows kompatibel und bietet ein nahtloses Erlebnis zum Modden von PvZ2.",
+        "android": "Android 10.0+",
+        "androidDescription": "Sen.Environment ist auch auf Android verfügbar und ermöglicht es Benutzern, auf ihrer bevorzugten Plattform zu modden."
+      },
+      "modules": {
+        "title": "Module",
+        "kernel": "Kernel",
+        "kernelDescription": "Der Kern von Sen.Environment, der wesentliche Funktionalitäten und Low-Level-Operationen bereitstellt.",
+        "shell": "Shell",
+        "shellDescription": "Eine Benutzeroberfläche zur Befehlsverarbeitung und Interaktion mit dem Kernel.",
+        "script": "Skript",
+        "scriptDescription": "Ein Modul für Automatisierungs- und Skriptfunktionen, mit dem Benutzer benutzerdefinierte Skripte erstellen können.",
+        "modding": "Modding",
+        "moddingDescription": "Ein Modul zur Spieldateimodifizierung und -verwaltung, mit dem Benutzer einfach Mods erstellen und verwalten können."
+      },
+      "tech": {
+        "title": "Verwendete Technologien",
+        "meson": "Meson",
+        "mesonDescription": "Meson ist ein Build-System, das schnell und benutzerfreundlich gestaltet ist. Es wird zum Erstellen des Sen-Projekts verwendet.",
+        "flutter": "Flutter",
+        "flutterDescription": "Flutter ist ein UI-Toolkit, das zum Erstellen des Sen-Projekts verwendet wird. Mit ihm kannst du schöne und responsive Benutzeroberflächen für mobile, Web- und Desktop-Anwendungen erstellen."
+      }
+    }
+  },
+  "download": {
+    "title": "Sen herunterladen",
+    "subtitle": "Wähle die Version, die am besten zu deinem Gerät passt",
+    "downloadButton": "Herunterladen",
+    "platform": {
+      "windows": "Windows",
+      "android": "Android"
+    },
+    "stats": {
+      "downloads": "Downloads",
+      "file": "Datei:",
+      "version": "Version"
+    },
+    "systemRequirements": {
+      "title": "Systemanforderungen",
+      "windows": {
+        "os": "Windows 10/11 (64-bit)",
+        "runtime": "C++ Redistributable",
+        "runtimeValue": "2015 und 2017",
+        "memory": "Speicher",
+        "memoryValue": "4 GB RAM",
+        "storage": "Speicher",
+        "storageValue": "200 MB verfügbarer Speicherplatz"
+      },
+      "android": {
+        "os": "Android 8.0 oder höher",
+        "memory": "Speicher",
+        "memoryValue": "2 GB RAM",
+        "storage": "Speicher",
+        "storageValue": "100 MB verfügbarer Speicherplatz",
+        "permissions": "Berechtigungen",
+        "permissionsValue": "Speicherzugriff, Internet"
+      },
+      "info": "Für das beste Erlebnis empfehlen wir dir, die neueste Version deines Betriebssystems zu verwenden."
+    },
+    "installation": {
+      "title": "Installationsanleitung",
+      "step1": {
+        "title": "Installationsprogramm herunterladen",
+        "description": "Klicke auf die Schaltfläche Herunterladen für deine Plattform oben."
+      },
+      "step2": {
+        "title": "Installationsprogramm ausführen",
+        "description": "Doppelklicke auf die heruntergeladene Datei, um den Installationsprozess zu starten."
+      },
+      "step3": {
+        "title": "Folge dem Setup-Assistenten",
+        "description": "Akzeptiere die Lizenzvereinbarung und wähle deine Installationsoptionen."
+      },
+      "step4": {
+        "title": "Sen starten",
+        "description": "Nach der Installation kannst du Sen von deinem Desktop oder dem Startmenü aus starten."
+      }
+    }
+  },
+  "changelog": {
+    "title": "Changelog",
+    "subtitle": "Bleib auf dem Laufenden mit den neuesten Änderungen und Verbesserungen"
+  },
+  "resources": {
+    "title": "Worldmap-Ressourcen",
+    "subtitle": "Zugriff auf und Verteilung von Worldmap-Ressourcen für PvZ2-Modding",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "Greifen Sie auf Worldmap-Ressourcen in Google Drive zu. Unterstützt gemeinsame Bearbeitung und einfaches Teilen.",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "Alternativer Zugriff über Microsoft OneDrive. Enterprise-Grade-Speicher und Sicherheit.",
+    "accessButton": "Auf Ressourcen zugreifen",
+    "howToUse": "Bedienungsanleitung",
+    "stepDownload": "Laden Sie die vollständigen Assets von einem der oben genannten Speicheranbieter herunter.",
+    "stepNavigate": "Klicken Sie in Sen auf Map Editor-Einstellungen und navigieren Sie zum entpackten Ordner der vollständigen Assets.",
+    "stepEnjoy": "Viel Spaß beim Verwenden der Worldmap-Ressourcen in Ihren PvZ2-Mods!"
+  },
+  "footer": {
+    "quickLinks": "Schnelllinks",
+    "resources": "Ressourcen",
+    "followUs": "Folge uns",
+    "copyright": "© Copyright {year} Haruma. Alle Rechte vorbehalten.",
+    "links": {
+      "home": "Startseite",
+      "download": "Herunterladen",
+      "changelog": "Changelog",
+      "resources": "Ressourcen",
+      "contact": "Kontaktiere uns",
+      "documentation": "Dokumentation",
+      "support": "Unterstützung",
+      "community": "Community-Forum",
+      "faq": "Häufig gestellte Fragen"
+    }
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Oops! Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "suggestions": "Möglicherweise möchtest du Folgendes versuchen:",
+    "goHome": "Zur Startseite gehen",
+    "visitDownloads": "Besuche Downloads",
+    "helpText": "Benötigen Sie Hilfe? Sieh dir an",
+    "aboutPage": "Über-Seite",
+    "or": "oder sieh dir an",
+    "changelogLink": "Changelog"
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "error": "Fehler",
+    "retry": "Erneut versuchen",
+    "close": "Schließen",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Vorherige",
+    "search": "Suchen",
+    "filter": "Filter",
+    "sort": "Sortieren",
+    "version": "Version",
+    "sen": "Sen"
+  }
+}

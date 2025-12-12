@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "title": "Sen - Narzędzie do modyfikacji PvZ2",
+    "description": "Sen to jest to, czego potrzebujesz! Wszechstronny instrument do modyfikacji PvZ2. Jest łatwy w użyciu i ma wiele funkcji, które pomogą ci w tworzeniu własnych modów.",
+    "about": {
+      "title": "O Sen - Narzędzie do modyfikacji PvZ2",
+      "description": "Dowiedz się więcej o Sen, wszechstronnym narzędziu do modyfikacji PvZ2. Odkryj nasze funkcje, obsługiwane moduły, stos technologiczny i dostępność platformy.",
+      "keywords": "O Sen, modyfikacja PvZ2, funkcje narzędzia do modyfikacji, modyfikacja gier, open source"
+    },
+    "download": {
+      "title": "Pobierz Sen | Sen - Narzędzie do modyfikacji PvZ2",
+      "description": "Pobierz Sen dla Windows, Android i innych platform. Uzyskaj najnowszą wersję i zacznij modyfikować PvZ2 już dzisiaj!"
+    },
+    "changelog": {
+      "title": "Dziennik zmian | Sen - Narzędzie do modyfikacji PvZ2",
+      "description": "Wyświetl pełny dziennik zmian Sen. Zobacz wszystkie aktualizacje, nowe funkcje, poprawki błędów i ulepszenia we wszystkich wersjach."
+    },
+    "notFound": {
+      "title": "404 - Strona nie znaleziona | Sen",
+      "description": "Szukana strona nie istnieje."
+    }
+  },
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "download": "Pobierz",
+    "resources": "Zasoby",
+    "changelog": "Dziennik zmian",
+    "collapse": "Zwiń",
+    "welcomeDescription": "Witaj w Sen - Narzędzie do modyfikacji PvZ2",
+    "aboutDescription": "Dowiedz się więcej o Sen i jego funkcjach",
+    "downloadDescription": "Pobierz Sen dla swojej platformy",
+    "resourcesDescription": "Uzyskaj dostęp do zasobów mapy świata dla modowania PvZ2",
+    "changelogDescription": "Wyświetl notatki wydania i aktualizacje"
+  },
+  "hero": {
+    "tagline": "Buduj swoje mody PvZ2 szybciej z Sen!",
+    "description": "Sen to jest to, czego potrzebujesz! Wszechstronny instrument do modyfikacji PvZ2. Jest łatwy w użyciu i ma wiele funkcji, które pomogą ci w tworzeniu własnych modów.",
+    "downloadButton": "Pobierz",
+    "discordButton": "Serwer Discord"
+  },
+  "about": {
+    "pageTitle": "O Sen - Narzędzie do modyfikacji PvZ2",
+    "mainTitle": "Sen.Environment",
+    "subtitle": "Ostateczne narzędzie do modyfikacji PvZ2",
+    "sections": {
+      "about": {
+        "title": "O nas",
+        "description": "Sen.Environment to narzędzie do modyfikacji PvZ2, zaprojektowane w celu uproszczenia procesu modyfikacji i poprawy doświadczenia grania."
+      },
+      "platform": {
+        "title": "Obsługa platform",
+        "windows": "Windows 10+",
+        "windowsDescription": "Sen.Environment jest w pełni zgodny z systemem Windows, zapewniając bezproblemowe doświadczenie modyfikacji PvZ2.",
+        "android": "Android 10.0+",
+        "androidDescription": "Sen.Environment jest również dostępny na Androidzie, pozwalając użytkownikom cieszyć się modyfikacją na preferowanej platformie."
+      },
+      "modules": {
+        "title": "Moduły",
+        "kernel": "Jądro",
+        "kernelDescription": "Jądro Sen.Environment, zapewniające podstawowe funkcjonalności i operacje na niskim poziomie.",
+        "shell": "Powłoka",
+        "shellDescription": "Interfejs użytkownika do przetwarzania poleceń i interakcji z jądrem.",
+        "script": "Skrypt",
+        "scriptDescription": "Moduł do możliwości automatyzacji i tworzenia skryptów, umożliwiający użytkownikom tworzenie niestandardowych skryptów.",
+        "modding": "Modyfikacja",
+        "moddingDescription": "Moduł do modyfikacji plików gry i zarządzania nimi, umożliwiający użytkownikom łatwe tworzenie i zarządzanie modami."
+      },
+      "tech": {
+        "title": "Stosowane technologie",
+        "meson": "Meson",
+        "mesonDescription": "Meson to system budowy zaprojektowany tak, aby był szybki i przyjazny dla użytkownika. Jest używany do budowania projektu Sen.",
+        "flutter": "Flutter",
+        "flutterDescription": "Flutter to zestaw narzędzi interfejsu użytkownika używany do budowania projektu Sen. Pozwala na tworzenie pięknych i responsywnych interfejsów użytkownika dla aplikacji mobilnych, internetowych i desktopowych."
+      }
+    }
+  },
+  "download": {
+    "title": "Pobierz Sen",
+    "subtitle": "Wybierz wersję, która najlepiej pasuje do Twojego urządzenia",
+    "downloadButton": "Pobierz",
+    "platform": {
+      "windows": "Windows",
+      "android": "Android"
+    },
+    "stats": {
+      "downloads": "pobierań",
+      "file": "Plik:",
+      "version": "Wersja"
+    },
+    "systemRequirements": {
+      "title": "Wymagania systemowe",
+      "windows": {
+        "os": "Windows 10/11 (64-bit)",
+        "runtime": "C++ Redistributable",
+        "runtimeValue": "2015 i 2017",
+        "memory": "Pamięć",
+        "memoryValue": "4 GB RAM",
+        "storage": "Magazyn",
+        "storageValue": "200 MB wolnego miejsca"
+      },
+      "android": {
+        "os": "Android 8.0 lub nowszy",
+        "memory": "Pamięć",
+        "memoryValue": "2 GB RAM",
+        "storage": "Magazyn",
+        "storageValue": "100 MB wolnego miejsca",
+        "permissions": "Uprawnienia",
+        "permissionsValue": "Dostęp do magazynu, Internet"
+      },
+      "info": "Aby uzyskać najlepsze doświadczenie, zalecamy używanie najnowszej wersji systemu operacyjnego."
+    },
+    "installation": {
+      "title": "Przewodnik instalacji",
+      "step1": {
+        "title": "Pobierz instalator",
+        "description": "Kliknij przycisk pobierania dla swojej platformy powyżej."
+      },
+      "step2": {
+        "title": "Uruchom instalator",
+        "description": "Kliknij dwukrotnie pobrany plik, aby rozpocząć proces instalacji."
+      },
+      "step3": {
+        "title": "Postępuj zgodnie z kreatorem konfiguracji",
+        "description": "Zaakceptuj umowę licencyjną i wybierz opcje instalacji."
+      },
+      "step4": {
+        "title": "Uruchom Sen",
+        "description": "Po zainstalowaniu możesz uruchomić Sen z pulpitu lub menu Start."
+      }
+    }
+  },
+  "changelog": {
+    "title": "Dziennik zmian",
+    "subtitle": "Bądź na bieżąco z najnowszymi zmianami i ulepszeniami"
+  },
+  "resources": {
+    "title": "Zasoby Mapy Świata",
+    "subtitle": "Uzyskaj dostęp i rozpowszechniaj zasoby mapy świata do modowania PvZ2",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "Uzyskaj dostęp do zasobów mapy świata na Dysku Google. Obsługuje edycję wspólną i łatwe udostępnianie.",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "Alternatywny dostęp za pośrednictwem Microsoft OneDrive. Przechowywanie i zabezpieczenia klasy Enterprise.",
+    "accessButton": "Uzyskaj Dostęp do Zasobów",
+    "howToUse": "Jak Korzystać",
+    "stepDownload": "Pobierz pełne zasoby od jednego z dostawców przechowywania powyżej.",
+    "stepNavigate": "W Sen kliknij ustawienia edytora mapy i przejdź do rozpakowanego folderu pełnych zasobów.",
+    "stepEnjoy": "Ciesz się korzystaniem z zasobów mapy świata w swoich modach PvZ2!"
+  },
+  "footer": {
+    "quickLinks": "Szybkie linki",
+    "resources": "Zasoby",
+    "followUs": "Obserwuj nas",
+    "copyright": "© Prawa autorskie {year} Haruma. Wszystkie prawa zastrzeżone.",
+    "links": {
+      "home": "Strona główna",
+      "download": "Pobierz",
+      "changelog": "Dziennik zmian",
+      "resources": "Zasoby",
+      "contact": "Skontaktuj się z nami",
+      "documentation": "Dokumentacja",
+      "support": "Wsparcie",
+      "community": "Forum społeczności",
+      "faq": "Często zadawane pytania"
+    }
+  },
+  "notFound": {
+    "title": "Strona nie znaleziona",
+    "description": "Ups! Szukana strona nie istnieje lub została przeniesiona.",
+    "suggestions": "Możesz spróbować:",
+    "goHome": "Przejdź do strony głównej",
+    "visitDownloads": "Odwiedź pobieranie",
+    "helpText": "Potrzebujesz pomocy? Sprawdź naszą",
+    "aboutPage": "Stronę o nas",
+    "or": "lub wyświetl",
+    "changelogLink": "Dziennik zmian"
+  },
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Błąd",
+    "retry": "Ponów próbę",
+    "close": "Zamknij",
+    "cancel": "Anuluj",
+    "save": "Zapisz",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "back": "Wstecz",
+    "next": "Następny",
+    "previous": "Poprzednia",
+    "search": "Szukaj",
+    "filter": "Filtr",
+    "sort": "Sortuj",
+    "version": "Wersja",
+    "sen": "Sen"
+  }
+}

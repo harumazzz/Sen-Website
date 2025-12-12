@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "title": "Sen - PvZ2 Modificatie Tool",
+    "description": "Sen is wat je nodig hebt! Het all-in-one gereedschap voor PvZ2-modificatie. Het is gemakkelijk in gebruik en heeft veel functies om je te helpen je eigen mods te maken.",
+    "about": {
+      "title": "Over Sen - PvZ2 Modificatie Tool",
+      "description": "Meer informatie over Sen, het all-in-one PvZ2-modificatiegestuikje. Ontdek onze functies, ondersteunde modules, technologiestapel en platformbeschikbaarheid.",
+      "keywords": "Over Sen, PvZ2-modificatie, functies van modificatiegereedschap, spelmodificatie, open source"
+    },
+    "download": {
+      "title": "Download Sen | Sen - PvZ2 Modificatie Tool",
+      "description": "Download Sen voor Windows, Android en andere platforms. Download de nieuwste versie en begin vandaag nog met het modificeren van PvZ2!"
+    },
+    "changelog": {
+      "title": "Changelog | Sen - PvZ2 Modificatie Tool",
+      "description": "Bekijk de volledige changelog van Sen. Bekijk alle updates, nieuwe functies, bugfixes en verbeteringen in alle versies."
+    },
+    "notFound": {
+      "title": "404 - Pagina niet gevonden | Sen",
+      "description": "De pagina die je zoekt, bestaat niet."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Over",
+    "download": "Download",
+    "resources": "Bronnen",
+    "changelog": "Changelog",
+    "collapse": "Samenvouwen",
+    "welcomeDescription": "Welkom bij Sen - PvZ2 Modificatie Tool",
+    "aboutDescription": "Meer informatie over Sen en zijn functies",
+    "downloadDescription": "Download Sen voor uw platform",
+    "resourcesDescription": "Toegang tot wereldkaart bronnen voor PvZ2 modding",
+    "changelogDescription": "Bekijk releaseopmerkingen en updates"
+  },
+  "hero": {
+    "tagline": "Bouw je PvZ2-mods sneller met Sen!",
+    "description": "Sen is wat je nodig hebt! Het all-in-one gereedschap voor PvZ2-modificatie. Het is gemakkelijk in gebruik en heeft veel functies om je te helpen je eigen mods te maken.",
+    "downloadButton": "Download",
+    "discordButton": "Discord-server"
+  },
+  "about": {
+    "pageTitle": "Over Sen - PvZ2 Modificatie Tool",
+    "mainTitle": "Sen.Environment",
+    "subtitle": "Het ultieme modificatiegestuikje voor PvZ2",
+    "sections": {
+      "about": {
+        "title": "Over",
+        "description": "Sen.Environment is een modificatiegestuikje voor PvZ2, ontworpen om het modificatieproces te vereenvoudigen en de spelervaring te verbeteren."
+      },
+      "platform": {
+        "title": "Platformondersteuning",
+        "windows": "Windows 10+",
+        "windowsDescription": "Sen.Environment is volledig compatibel met Windows en biedt een naadloze ervaring voor het modificeren van PvZ2.",
+        "android": "Android 10.0+",
+        "androidDescription": "Sen.Environment is ook beschikbaar op Android, waarmee gebruikers kunnen genieten van modificatie op hun favoriete platform."
+      },
+      "modules": {
+        "title": "Modules",
+        "kernel": "Kernel",
+        "kernelDescription": "De kern van Sen.Environment, die essentiële functionaliteiten en laagstaande operaties biedt.",
+        "shell": "Shell",
+        "shellDescription": "Een gebruikersinterface voor opdrachtverwerking en interactie met de kernel.",
+        "script": "Script",
+        "scriptDescription": "Een module voor automatiserings- en scriptmogelijkheden, waarmee gebruikers aangepaste scripts kunnen maken.",
+        "modding": "Modificatie",
+        "moddingDescription": "Een module voor spelbestandwijziging en -beheer, waarmee gebruikers eenvoudig mods kunnen maken en beheren."
+      },
+      "tech": {
+        "title": "Gebruikte technologieën",
+        "meson": "Meson",
+        "mesonDescription": "Meson is een bouwsysteem dat is ontworpen om snel en gebruiksvriendelijk te zijn. Het wordt gebruikt om het Sen-project te bouwen.",
+        "flutter": "Flutter",
+        "flutterDescription": "Flutter is een UI-toolkit die wordt gebruikt om het Sen-project te bouwen. Het stelt je in staat om mooie en responsieve gebruikersinterfaces voor mobiele, web- en desktoptoepassingen te bouwen."
+      }
+    }
+  },
+  "download": {
+    "title": "Download Sen",
+    "subtitle": "Kies de versie die het beste bij uw apparaat past",
+    "downloadButton": "Download",
+    "platform": {
+      "windows": "Windows",
+      "android": "Android"
+    },
+    "stats": {
+      "downloads": "downloads",
+      "file": "Bestand:",
+      "version": "Versie"
+    },
+    "systemRequirements": {
+      "title": "Systeemvereisten",
+      "windows": {
+        "os": "Windows 10/11 (64-bit)",
+        "runtime": "C++ Redistributable",
+        "runtimeValue": "2015 en 2017",
+        "memory": "Geheugen",
+        "memoryValue": "4 GB RAM",
+        "storage": "Opslag",
+        "storageValue": "200 MB beschikbare ruimte"
+      },
+      "android": {
+        "os": "Android 8.0 of hoger",
+        "memory": "Geheugen",
+        "memoryValue": "2 GB RAM",
+        "storage": "Opslag",
+        "storageValue": "100 MB beschikbare ruimte",
+        "permissions": "Toestemmingen",
+        "permissionsValue": "Opslagtoegang, Internet"
+      },
+      "info": "Voor de beste ervaring raden we je aan de nieuwste versie van uw besturingssysteem te gebruiken."
+    },
+    "installation": {
+      "title": "Installatiehandleiding",
+      "step1": {
+        "title": "Download het installatieprogramma",
+        "description": "Klik op de downloadknop voor uw platform hierboven."
+      },
+      "step2": {
+        "title": "Voer het installatieprogramma uit",
+        "description": "Dubbelklik op het gedownloade bestand om het installatieproces te starten."
+      },
+      "step3": {
+        "title": "Volg de installatiewizard",
+        "description": "Accepteer de licentieovereenkomst en kies uw installatieopties."
+      },
+      "step4": {
+        "title": "Start Sen",
+        "description": "Nadat u het hebt geïnstalleerd, kunt u Sen starten vanaf uw bureaublad of startmenu."
+      }
+    }
+  },
+  "changelog": {
+    "title": "Changelog",
+    "subtitle": "Blijf op de hoogte van de nieuwste wijzigingen en verbeteringen"
+  },
+  "resources": {
+    "title": "Wereldkaart Bronnen",
+    "subtitle": "Toegang tot en distributie van wereldkaart bronnen voor PvZ2 modding",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "Toegang tot wereldkaart bronnen op Google Drive. Ondersteunt samenwerking bewerken en gemakkelijk delen.",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "Alternatieve toegang via Microsoft OneDrive. Enterprise-grade opslag en beveiliging.",
+    "accessButton": "Toegang tot Bronnen",
+    "howToUse": "Hoe te Gebruiken",
+    "stepDownload": "Download de volledige assets van een van de opslagproviders hierboven.",
+    "stepNavigate": "Klik in Sen op kaarteditor-instellingen en navigeer naar de uitgepakte map met volledige assets.",
+    "stepEnjoy": "Geniet van het gebruik van wereldkaart bronnen in uw PvZ2 mods!"
+  },
+  "footer": {
+    "quickLinks": "Snelkoppelingen",
+    "resources": "Bronnen",
+    "followUs": "Volg ons",
+    "copyright": "© Copyright {year} Haruma. Alle rechten voorbehouden.",
+    "links": {
+      "home": "Home",
+      "download": "Downloaden",
+      "changelog": "Changelog",
+      "resources": "Bronnen",
+      "contact": "Neem contact met ons op",
+      "documentation": "Documentatie",
+      "support": "Ondersteuning",
+      "community": "Communityforums",
+      "faq": "Veelgestelde vragen"
+    }
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "description": "Oeps! De pagina die je zoekt, bestaat niet of is verplaatst.",
+    "suggestions": "Je kunt proberen:",
+    "goHome": "Ga naar de homepage",
+    "visitDownloads": "Bezoek downloads",
+    "helpText": "Hulp nodig? Bekijk onze",
+    "aboutPage": "Over pagina",
+    "or": "of bekijk de",
+    "changelogLink": "Changelog"
+  },
+  "common": {
+    "loading": "Aan het laden...",
+    "error": "Fout",
+    "retry": "Probeer opnieuw",
+    "close": "Sluiten",
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    "delete": "Verwijderen",
+    "edit": "Bewerken",
+    "back": "Terug",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "search": "Zoeken",
+    "filter": "Filter",
+    "sort": "Sorteren",
+    "version": "Versie",
+    "sen": "Sen"
+  }
+}
