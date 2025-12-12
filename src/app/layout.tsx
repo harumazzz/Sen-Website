@@ -3,7 +3,6 @@ import { geistMono, geistSans } from "@/constants/fonts";
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: Promise<{}>;
 }
 
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
