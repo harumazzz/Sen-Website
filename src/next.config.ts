@@ -7,15 +7,9 @@ const nextConfig: NextConfig = {
   // React Compiler
   reactCompiler: true,
 
-  // Image optimization
+  // Image optimization for Vercel
   images: {
-    formats: ["image/avif", "image/webp"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-    ],
+    unoptimized: false,
   },
 
   // Performance optimizations
