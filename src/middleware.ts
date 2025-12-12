@@ -15,9 +15,8 @@ export default createMiddleware({
     "ms",
     "id",
   ],
-  localeDetection: true,
-  localeCookie: true,
   defaultLocale: "en",
+  localePrefix: "as-needed",
 });
 
 export const config = {
