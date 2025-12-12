@@ -3,8 +3,5 @@
   "outputDirectory": ".next",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "devCommand": "next dev",
-  "env": {
-    "NEXT_PUBLIC_ENVIRONMENT": "@next-public-environment"
-  }
+  "devCommand": "next dev"
 }
