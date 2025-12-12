@@ -2,5 +2,9 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "devCommand": "next dev",
+  "env": {
+    "NEXT_PUBLIC_ENVIRONMENT": "@next-public-environment"
+  }
 }
