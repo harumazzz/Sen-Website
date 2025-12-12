@@ -24,11 +24,13 @@
     "home": "Trang chủ",
     "about": "Về",
     "download": "Tải xuống",
+    "resources": "Tài Nguyên",
     "changelog": "Nhật ký thay đổi",
     "collapse": "Thu gọn",
     "welcomeDescription": "Chào mừng đến Sen - Công cụ Modding PvZ2",
     "aboutDescription": "Tìm hiểu thêm về Sen và các tính năng của nó",
-    "downloadDescription": "Tải Sen cho nền tảng của bạn",
+    "downloadDescription": "Tải xuống Sen cho nền tảng của bạn",
+    "resourcesDescription": "Truy cập tài nguyên bản đồ thế giới cho modding PvZ2",
     "changelogDescription": "Xem ghi chú phát hành và cập nhật"
   },
   "hero": {
@@ -132,6 +134,19 @@
     "title": "Nhật ký thay đổi",
     "subtitle": "Cập nhật với các thay đổi và cải tiến mới nhất"
   },
+  "resources": {
+    "title": "Tài Nguyên Bản Đồ Thế Giới",
+    "subtitle": "Truy cập và phân phối tài nguyên bản đồ thế giới cho modding PvZ2",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "Truy cập tài nguyên bản đồ thế giới trên Google Drive. Hỗ trợ chỉnh sửa cộng tác và chia sẻ dễ dàng.",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "Truy cập thay thế qua Microsoft OneDrive. Lưu trữ và bảo mật cấp doanh nghiệp.",
+    "accessButton": "Truy Cập Tài Nguyên",
+    "howToUse": "Cách Sử Dụng",
+    "stepDownload": "Tải xuống toàn bộ tài sản từ bất kỳ nhà cung cấp lưu trữ nào ở trên.",
+    "stepNavigate": "Trong Sen, nhấp vào cài đặt trình chỉnh sửa bản đồ và điều hướng đến thư mục tài sản đầy đủ đã giải nén.",
+    "stepEnjoy": "Tận hưởng việc sử dụng tài nguyên bản đồ thế giới trong các mod PvZ2 của bạn!"
+  },
   "footer": {
     "quickLinks": "Liên kết nhanh",
     "resources": "Tài nguyên",
@@ -141,6 +156,7 @@
       "home": "Trang chủ",
       "download": "Tải xuống",
       "changelog": "Nhật ký thay đổi",
+      "resources": "Tài Nguyên",
       "contact": "Liên hệ với chúng tôi",
       "documentation": "Tài liệu",
       "support": "Hỗ trợ",

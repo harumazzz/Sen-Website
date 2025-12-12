@@ -23,6 +23,7 @@ export function Footer() {
                 links={[
                   { label: t("footer.links.home"), href: "/" },
                   { label: t("footer.links.download"), href: "/download" },
+                  { label: t("footer.links.resources"), href: "/resources" },
                   { label: t("footer.links.changelog"), href: "/changelog" },
                   { label: t("footer.links.contact"), href: "/about" },
                 ]}

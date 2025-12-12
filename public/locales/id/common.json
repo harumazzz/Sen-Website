@@ -29,6 +29,7 @@
     "welcomeDescription": "Selamat datang di Sen - Alat Modifikasi PvZ2",
     "aboutDescription": "Pelajari lebih lanjut tentang Sen dan fitur-fiturnya",
     "downloadDescription": "Unduh Sen untuk platform Anda",
+    "resourcesDescription": "Akses sumber daya peta dunia untuk modding PvZ2",
     "changelogDescription": "Lihat catatan rilis dan pembaruan"
   },
   "hero": {
@@ -132,6 +133,19 @@
     "title": "Catatan Perubahan",
     "subtitle": "Tetap diperbarui dengan perubahan dan peningkatan terbaru"
   },
+  "resources": {
+    "title": "Sumber Daya Peta Dunia",
+    "subtitle": "Akses dan distribusikan sumber daya peta dunia untuk modding PvZ2",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "Akses sumber daya peta dunia di Google Drive. Mendukung pengeditan kolaboratif dan berbagi mudah.",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "Akses alternatif melalui Microsoft OneDrive. Penyimpanan dan keamanan tingkat perusahaan.",
+    "accessButton": "Akses Sumber Daya",
+    "howToUse": "Cara Menggunakan",
+    "stepDownload": "Unduh aset lengkap dari salah satu penyedia penyimpanan di atas.",
+    "stepNavigate": "Di Sen, klik pengaturan editor peta dan arahkan ke folder aset lengkap yang belum dibuka.",
+    "stepEnjoy": "Nikmati menggunakan sumber daya peta dunia di mod PvZ2 Anda!"
+  },
   "footer": {
     "quickLinks": "Tautan Cepat",
     "resources": "Sumber Daya",
@@ -141,6 +155,7 @@
       "home": "Beranda",
       "download": "Unduh",
       "changelog": "Catatan Perubahan",
+      "resources": "Sumber Daya",
       "contact": "Hubungi Kami",
       "documentation": "Dokumentasi",
       "support": "Dukungan",

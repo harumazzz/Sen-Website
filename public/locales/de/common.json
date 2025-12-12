@@ -28,7 +28,8 @@
     "collapse": "Minimieren",
     "welcomeDescription": "Willkommen bei Sen - PvZ2 Modding-Tool",
     "aboutDescription": "Erfahre mehr über Sen und seine Funktionen",
-    "downloadDescription": "Laden Sie Sen für Ihre Plattform herunter",
+    "downloadDescription": "Lade Sen für deine Plattform herunter",
+    "resourcesDescription": "Zugriff auf Worldmap-Ressourcen für PvZ2-Modding",
     "changelogDescription": "Sieh dir Release-Notizen und Updates an"
   },
   "hero": {
@@ -132,6 +133,19 @@
     "title": "Changelog",
     "subtitle": "Bleib auf dem Laufenden mit den neuesten Änderungen und Verbesserungen"
   },
+  "resources": {
+    "title": "Worldmap-Ressourcen",
+    "subtitle": "Zugriff auf und Verteilung von Worldmap-Ressourcen für PvZ2-Modding",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "Greifen Sie auf Worldmap-Ressourcen in Google Drive zu. Unterstützt gemeinsame Bearbeitung und einfaches Teilen.",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "Alternativer Zugriff über Microsoft OneDrive. Enterprise-Grade-Speicher und Sicherheit.",
+    "accessButton": "Auf Ressourcen zugreifen",
+    "howToUse": "Bedienungsanleitung",
+    "stepDownload": "Laden Sie die vollständigen Assets von einem der oben genannten Speicheranbieter herunter.",
+    "stepNavigate": "Klicken Sie in Sen auf Map Editor-Einstellungen und navigieren Sie zum entpackten Ordner der vollständigen Assets.",
+    "stepEnjoy": "Viel Spaß beim Verwenden der Worldmap-Ressourcen in Ihren PvZ2-Mods!"
+  },
   "footer": {
     "quickLinks": "Schnelllinks",
     "resources": "Ressourcen",
@@ -141,6 +155,7 @@
       "home": "Startseite",
       "download": "Herunterladen",
       "changelog": "Changelog",
+      "resources": "Ressourcen",
       "contact": "Kontaktiere uns",
       "documentation": "Dokumentation",
       "support": "Unterstützung",

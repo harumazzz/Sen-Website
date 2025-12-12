@@ -24,11 +24,13 @@
     "home": "Home",
     "about": "About",
     "download": "Download",
+    "resources": "Resources",
     "changelog": "Changelog",
     "collapse": "Collapse",
     "welcomeDescription": "Welcome to Sen - PvZ2 Modding Tool",
     "aboutDescription": "Learn more about Sen and its features",
     "downloadDescription": "Download Sen for your platform",
+    "resourcesDescription": "Access worldmap resources for PvZ2 modding",
     "changelogDescription": "View release notes and updates"
   },
   "hero": {
@@ -132,6 +134,19 @@
     "title": "Changelog",
     "subtitle": "Stay updated with the latest changes and improvements"
   },
+  "resources": {
+    "title": "Worldmap Resources",
+    "subtitle": "Access and distribute worldmap resources for PvZ2 modding",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "Access worldmap resources on Google Drive. Supports collaborative editing and easy sharing.",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "Alternative access through Microsoft OneDrive. Enterprise-grade storage and security.",
+    "accessButton": "Access Resources",
+    "howToUse": "How to Use",
+    "stepDownload": "Download the full assets from either storage provider above.",
+    "stepNavigate": "In Sen, click map editor settings and navigate to the unpacked folder of the full assets.",
+    "stepEnjoy": "Enjoy using the worldmap resources in your PvZ2 mods!"
+  },
   "footer": {
     "quickLinks": "Quick Links",
     "resources": "Resources",
@@ -141,6 +156,7 @@
       "home": "Home",
       "download": "Download",
       "changelog": "Changelog",
+      "resources": "Resources",
       "contact": "Contact us",
       "documentation": "Documentation",
       "support": "Support",

@@ -24,11 +24,13 @@
     "home": "Home",
     "about": "Over",
     "download": "Download",
+    "resources": "Bronnen",
     "changelog": "Changelog",
     "collapse": "Samenvouwen",
     "welcomeDescription": "Welkom bij Sen - PvZ2 Modificatie Tool",
     "aboutDescription": "Meer informatie over Sen en zijn functies",
     "downloadDescription": "Download Sen voor uw platform",
+    "resourcesDescription": "Toegang tot wereldkaart bronnen voor PvZ2 modding",
     "changelogDescription": "Bekijk releaseopmerkingen en updates"
   },
   "hero": {
@@ -132,6 +134,19 @@
     "title": "Changelog",
     "subtitle": "Blijf op de hoogte van de nieuwste wijzigingen en verbeteringen"
   },
+  "resources": {
+    "title": "Wereldkaart Bronnen",
+    "subtitle": "Toegang tot en distributie van wereldkaart bronnen voor PvZ2 modding",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "Toegang tot wereldkaart bronnen op Google Drive. Ondersteunt samenwerking bewerken en gemakkelijk delen.",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "Alternatieve toegang via Microsoft OneDrive. Enterprise-grade opslag en beveiliging.",
+    "accessButton": "Toegang tot Bronnen",
+    "howToUse": "Hoe te Gebruiken",
+    "stepDownload": "Download de volledige assets van een van de opslagproviders hierboven.",
+    "stepNavigate": "Klik in Sen op kaarteditor-instellingen en navigeer naar de uitgepakte map met volledige assets.",
+    "stepEnjoy": "Geniet van het gebruik van wereldkaart bronnen in uw PvZ2 mods!"
+  },
   "footer": {
     "quickLinks": "Snelkoppelingen",
     "resources": "Bronnen",
@@ -139,8 +154,9 @@
     "copyright": "© Copyright {year} Haruma. Alle rechten voorbehouden.",
     "links": {
       "home": "Home",
-      "download": "Download",
+      "download": "Downloaden",
       "changelog": "Changelog",
+      "resources": "Bronnen",
       "contact": "Neem contact met ons op",
       "documentation": "Documentatie",
       "support": "Ondersteuning",

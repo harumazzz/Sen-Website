@@ -3,7 +3,7 @@
  * Centralized routing configuration with metadata and navigation structure
  */
 
-import { Home, Info, Download, Puzzle, FileText, LucideIcon } from "lucide-react";
+import { Home, Info, Download, Puzzle, FileText, FolderOpen, LucideIcon } from "lucide-react";
 
 /**
  * Route paths
@@ -12,6 +12,7 @@ export const ROUTES = {
   HOME: "/",
   ABOUT: "/about",
   DOWNLOAD: "/download",
+  RESOURCES: "/resources",
   EXTENSION: "/extension",
   CHANGELOG: "/changelog",
 } as const;
@@ -52,6 +53,12 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     description: "nav.downloadDescription",
   },
   {
+    label: "nav.resources",
+    href: ROUTES.RESOURCES,
+    icon: FolderOpen,
+    description: "nav.resourcesDescription",
+  },
+  {
     label: "nav.changelog",
     href: ROUTES.CHANGELOG,
     icon: FileText,
@@ -77,6 +84,11 @@ export const ROUTE_METADATA = {
     title: "Download Sen | Sen - PvZ2 Modding Tool",
     description:
       "Download Sen for Windows, Android, and other platforms. Get the latest version and start modding PvZ2 today!",
+  },
+  [ROUTES.RESOURCES]: {
+    title: "Resources | Sen - PvZ2 Modding Tool",
+    description:
+      "Access and distribute worldmap resources for PvZ2 modding. Download assets from Google Drive or OneDrive for your modding projects.",
   },
   [ROUTES.EXTENSION]: {
     title: "Extensions | Sen - PvZ2 Modding Tool",

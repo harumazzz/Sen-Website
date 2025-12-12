@@ -24,11 +24,13 @@
     "home": "主页",
     "about": "关于",
     "download": "下载",
+    "resources": "资源",
     "changelog": "更改日志",
     "collapse": "收起",
     "welcomeDescription": "欢迎来到 Sen - PvZ2 Modding工具",
     "aboutDescription": "了解更多关于 Sen 及其功能",
     "downloadDescription": "为您的平台下载 Sen",
+    "resourcesDescription": "访问 PvZ2 模组世界地图资源",
     "changelogDescription": "查看发行说明和更新"
   },
   "hero": {
@@ -132,15 +134,29 @@
     "title": "更改日志",
     "subtitle": "了解最新的更改和改进"
   },
+  "resources": {
+    "title": "世界地图资源",
+    "subtitle": "访问和分发PvZ2模组的世界地图资源",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "在Google Drive上访问世界地图资源。支持协作编辑和轻松共享。",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "通过Microsoft OneDrive进行替代访问。企业级存储和安全。",
+    "accessButton": "访问资源",
+    "howToUse": "使用方法",
+    "stepDownload": "从上述任一存储提供商下载完整资源。",
+    "stepNavigate": "在Sen中，点击地图编辑器设置，导航到完整资源的解压文件夹。",
+    "stepEnjoy": "尽情享受在您的PvZ2模组中使用世界地图资源！"
+  },
   "footer": {
     "quickLinks": "快速链接",
     "resources": "资源",
     "followUs": "关注我们",
     "copyright": "© 版权 {year} Haruma。版权所有。",
     "links": {
-      "home": "主页",
+      "home": "首页",
       "download": "下载",
       "changelog": "更改日志",
+      "resources": "资源",
       "contact": "联系我们",
       "documentation": "文档",
       "support": "支持",

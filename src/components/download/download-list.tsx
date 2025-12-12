@@ -58,22 +58,26 @@ export function DownloadList({ assets, version = "LTS", isLoading, error }: Down
   }
 
   return (
-    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-1">
+    <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4">
       {assets.map((asset) => {
         const platform = asset.name.toLowerCase().includes("android") ? "android" : "windows";
 
         return (
-          <DownloadCard
+          <div
             key={asset.name}
-            platform={platform}
-            version={version}
-            fileName={asset.name}
-            fileSize={asset.size}
-            downloadUrl={asset.browserDownloadUrl}
-            downloadCount={asset.downloadCount}
-            releaseDate={asset.createdAt}
-            description="Recommended for most users, includes all features and optimizations"
-          />
+            className="w-full sm:w-auto sm:flex-1 sm:min-w-[300px] sm:max-w-[400px]"
+          >
+            <DownloadCard
+              platform={platform}
+              version={version}
+              fileName={asset.name}
+              fileSize={asset.size}
+              downloadUrl={asset.browserDownloadUrl}
+              downloadCount={asset.downloadCount}
+              releaseDate={asset.createdAt}
+              description="Recommended for most users, includes all features and optimizations"
+            />
+          </div>
         );
       })}
     </div>

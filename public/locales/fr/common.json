@@ -24,12 +24,14 @@
     "home": "Accueil",
     "about": "À propos",
     "download": "Télécharger",
+    "resources": "Ressources",
     "changelog": "Journal des modifications",
     "collapse": "Réduire",
     "welcomeDescription": "Bienvenue dans Sen - Outil de modification PvZ2",
     "aboutDescription": "En savoir plus sur Sen et ses fonctionnalités",
-    "downloadDescription": "Téléchargez Sen pour votre plate-forme",
-    "changelogDescription": "Consultez les notes de version et les mises à jour"
+    "downloadDescription": "Téléchargez Sen pour votre plateforme",
+    "resourcesDescription": "Accédez aux ressources de carte du monde pour le modding PvZ2",
+    "changelogDescription": "Voir les notes de version et les mises à jour"
   },
   "hero": {
     "tagline": "Construisez vos mods PvZ2 plus rapidement avec Sen!",
@@ -132,6 +134,19 @@
     "title": "Journal des modifications",
     "subtitle": "Restez à jour avec les dernières modifications et améliorations"
   },
+  "resources": {
+    "title": "Ressources de Carte du Monde",
+    "subtitle": "Accédez et distribuez les ressources de carte du monde pour le modding PvZ2",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "Accédez aux ressources de carte du monde sur Google Drive. Supporte l'édition collaborative et le partage facile.",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "Accès alternatif via Microsoft OneDrive. Stockage et sécurité de niveau entreprise.",
+    "accessButton": "Accéder aux Ressources",
+    "howToUse": "Comment Utiliser",
+    "stepDownload": "Téléchargez les ressources complètes à partir de l'un des fournisseurs de stockage ci-dessus.",
+    "stepNavigate": "Dans Sen, cliquez sur les paramètres de l'éditeur de carte et accédez au dossier décompressé des ressources complètes.",
+    "stepEnjoy": "Profitez de l'utilisation des ressources de carte du monde dans vos mods PvZ2!"
+  },
   "footer": {
     "quickLinks": "Liens rapides",
     "resources": "Ressources",
@@ -141,6 +156,7 @@
       "home": "Accueil",
       "download": "Télécharger",
       "changelog": "Journal des modifications",
+      "resources": "Ressources",
       "contact": "Contactez-nous",
       "documentation": "Documentation",
       "support": "Support",

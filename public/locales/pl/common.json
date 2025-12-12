@@ -24,11 +24,13 @@
     "home": "Strona główna",
     "about": "O nas",
     "download": "Pobierz",
+    "resources": "Zasoby",
     "changelog": "Dziennik zmian",
-    "collapse": "Zwinąć",
+    "collapse": "Zwiń",
     "welcomeDescription": "Witaj w Sen - Narzędzie do modyfikacji PvZ2",
     "aboutDescription": "Dowiedz się więcej o Sen i jego funkcjach",
     "downloadDescription": "Pobierz Sen dla swojej platformy",
+    "resourcesDescription": "Uzyskaj dostęp do zasobów mapy świata dla modowania PvZ2",
     "changelogDescription": "Wyświetl notatki wydania i aktualizacje"
   },
   "hero": {
@@ -132,6 +134,19 @@
     "title": "Dziennik zmian",
     "subtitle": "Bądź na bieżąco z najnowszymi zmianami i ulepszeniami"
   },
+  "resources": {
+    "title": "Zasoby Mapy Świata",
+    "subtitle": "Uzyskaj dostęp i rozpowszechniaj zasoby mapy świata do modowania PvZ2",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "Uzyskaj dostęp do zasobów mapy świata na Dysku Google. Obsługuje edycję wspólną i łatwe udostępnianie.",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "Alternatywny dostęp za pośrednictwem Microsoft OneDrive. Przechowywanie i zabezpieczenia klasy Enterprise.",
+    "accessButton": "Uzyskaj Dostęp do Zasobów",
+    "howToUse": "Jak Korzystać",
+    "stepDownload": "Pobierz pełne zasoby od jednego z dostawców przechowywania powyżej.",
+    "stepNavigate": "W Sen kliknij ustawienia edytora mapy i przejdź do rozpakowanego folderu pełnych zasobów.",
+    "stepEnjoy": "Ciesz się korzystaniem z zasobów mapy świata w swoich modach PvZ2!"
+  },
   "footer": {
     "quickLinks": "Szybkie linki",
     "resources": "Zasoby",
@@ -141,6 +156,7 @@
       "home": "Strona główna",
       "download": "Pobierz",
       "changelog": "Dziennik zmian",
+      "resources": "Zasoby",
       "contact": "Skontaktuj się z nami",
       "documentation": "Dokumentacja",
       "support": "Wsparcie",

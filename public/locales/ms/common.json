@@ -24,11 +24,13 @@
     "home": "Beranda",
     "about": "Tentang",
     "download": "Unduh",
+    "resources": "Sumber Daya",
     "changelog": "Log Perubahan",
     "collapse": "Tutup",
     "welcomeDescription": "Selamat datang di Sen - Alat Pemodelan PvZ2",
     "aboutDescription": "Pelajari lebih lanjut tentang Sen dan fitur-fiturnya",
     "downloadDescription": "Unduh Sen untuk platform Anda",
+    "resourcesDescription": "Akses sumber daya peta dunia untuk modding PvZ2",
     "changelogDescription": "Lihat catatan rilis dan pembaruan"
   },
   "hero": {
@@ -132,6 +134,19 @@
     "title": "Log Perubahan",
     "subtitle": "Tetap diperbarui dengan perubahan dan peningkatan terbaru"
   },
+  "resources": {
+    "title": "Sumber Daya Peta Dunia",
+    "subtitle": "Akses dan agihkan sumber daya peta dunia untuk modding PvZ2",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "Akses sumber daya peta dunia di Google Drive. Menyokong penyuntingan kolaboratif dan perkongsian mudah.",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "Akses alternatif melalui Microsoft OneDrive. Storan dan keselamatan gred perusahaan.",
+    "accessButton": "Akses Sumber Daya",
+    "howToUse": "Cara Menggunakan",
+    "stepDownload": "Muat turun aset lengkap daripada mana-mana penyedia penyimpanan di atas.",
+    "stepNavigate": "Dalam Sen, klik tetapan editor peta dan navigasi ke folder aset lengkap yang telah dibuka.",
+    "stepEnjoy": "Nikmati menggunakan sumber daya peta dunia dalam mod PvZ2 anda!"
+  },
   "footer": {
     "quickLinks": "Tautan Cepat",
     "resources": "Sumber Daya",
@@ -141,6 +156,7 @@
       "home": "Beranda",
       "download": "Unduh",
       "changelog": "Log Perubahan",
+      "resources": "Sumber Daya",
       "contact": "Hubungi Kami",
       "documentation": "Dokumentasi",
       "support": "Dukungan",

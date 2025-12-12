@@ -24,11 +24,13 @@
     "home": "Inicio",
     "about": "Acerca de",
     "download": "Descargar",
+    "resources": "Recursos",
     "changelog": "Registro de cambios",
     "collapse": "Contraer",
     "welcomeDescription": "Bienvenido a Sen - Herramienta de Modificación PvZ2",
-    "aboutDescription": "Aprende más sobre Sen y sus características",
+    "aboutDescription": "Conoce más sobre Sen y sus características",
     "downloadDescription": "Descarga Sen para tu plataforma",
+    "resourcesDescription": "Accede a recursos de mapas del mundo para modding de PvZ2",
     "changelogDescription": "Ver notas de lanzamiento y actualizaciones"
   },
   "hero": {
@@ -132,6 +134,19 @@
     "title": "Registro de cambios",
     "subtitle": "Mantente actualizado con los cambios y mejoras más recientes"
   },
+  "resources": {
+    "title": "Recursos del Mapa Mundial",
+    "subtitle": "Accede y distribuye recursos de mapas del mundo para modding de PvZ2",
+    "googleDrive": "Google Drive",
+    "googleDriveDesc": "Accede a los recursos del mapa mundial en Google Drive. Soporta edición colaborativa y uso compartido fácil.",
+    "oneDrive": "OneDrive",
+    "oneDriveDesc": "Acceso alternativo a través de Microsoft OneDrive. Almacenamiento y seguridad de nivel empresarial.",
+    "accessButton": "Acceder a Recursos",
+    "howToUse": "Cómo Usar",
+    "stepDownload": "Descarga los recursos completos de cualquiera de los proveedores de almacenamiento anteriores.",
+    "stepNavigate": "En Sen, haz clic en configuración del editor de mapas y navega a la carpeta desempaquetada de los recursos completos.",
+    "stepEnjoy": "¡Disfruta usando los recursos del mapa mundial en tus mods de PvZ2!"
+  },
   "footer": {
     "quickLinks": "Enlaces rápidos",
     "resources": "Recursos",
@@ -141,6 +156,7 @@
       "home": "Inicio",
       "download": "Descargar",
       "changelog": "Registro de cambios",
+      "resources": "Recursos",
       "contact": "Contáctanos",
       "documentation": "Documentación",
       "support": "Soporte",

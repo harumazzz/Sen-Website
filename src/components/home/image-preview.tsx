@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight, Circle } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
@@ -28,9 +28,15 @@ export function ImagePreview() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { theme, resolvedTheme } = useTheme();
   const [isMobile, setIsMobile] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  // Prevent hydration mismatch by only rendering theme-dependent content after mount
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Detect mobile on client side
-  React.useEffect(() => {
+  useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 600);
     };
@@ -39,8 +45,8 @@ export function ImagePreview() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Determine which images to show
-  const currentTheme = theme === "system" ? resolvedTheme : theme;
+  // Use default light theme images before mounting to prevent hydration mismatch
+  const currentTheme = mounted ? (theme === "system" ? resolvedTheme : theme) : "light";
   const isDark = currentTheme === "dark";
   const images = isMobile
     ? isDark
@@ -134,6 +140,3 @@ export function ImagePreview() {
     </section>
   );
 }
-
-// Add React import for useEffect
-import * as React from "react";
