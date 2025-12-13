@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { NAVIGATION_ITEMS } from "@/lib/routes";
+import Link from "next/link";
+import { NAVIGATION_ITEMS, ROUTES } from "@/lib/routes";
 import { NavItem } from "./nav-item";
 import { Logo } from "@/components/ui/logo";
 import { Separator } from "@/components/ui/separator";
@@ -17,21 +18,24 @@ export function NavDrawer() {
   return (
     <aside
       className={cn(
-        "hidden lg:flex lg:flex-col lg:fixed lg:inset-y-0 lg:border-r lg:bg-background/95 lg:backdrop-blur lg:supports-[backdrop-filter]:bg-background/60 transition-all duration-300",
+        "hidden lg:flex lg:flex-col lg:fixed lg:inset-y-0 lg:border-r lg:backdrop-blur-xl lg:bg-gradient-to-b lg:from-white/15 lg:to-white/5 lg:border-white/30 lg:shadow-xl transition-all duration-300 dark:lg:from-white/10 dark:lg:to-white/3 dark:lg:border-white/20",
         isCollapsed ? "lg:w-16" : "lg:w-64"
       )}
     >
       <div className="flex flex-col h-full">
         {/* Logo Section */}
-        <div
+        <Link
+          href={ROUTES.HOME}
           className={cn(
-            "flex items-center gap-2 py-5 transition-all duration-300",
+            "flex items-center gap-2 py-5 transition-all duration-300 hover:bg-white/10 rounded-lg mx-2",
             isCollapsed ? "px-3 justify-center" : "px-6"
           )}
         >
           <Logo className="h-8 w-8 flex-shrink-0" />
-          {!isCollapsed && <span className="font-bold text-xl">{t("common.sen")}</span>}
-        </div>
+          {!isCollapsed && (
+            <span className="font-bold text-xl">{t("common.sen")}</span>
+          )}
+        </Link>
 
         <Separator />
 
@@ -51,12 +55,20 @@ export function NavDrawer() {
         <Separator />
 
         {/* Toggle Button */}
-        <div className={cn("py-2 transition-all duration-300", isCollapsed ? "px-3" : "px-6")}>
+        <div
+          className={cn(
+            "py-2 transition-all duration-300",
+            isCollapsed ? "px-3" : "px-6"
+          )}
+        >
           <Button
-            variant="ghost"
+            variant="glass"
             size="sm"
             onClick={() => setIsCollapsed(!isCollapsed)}
-            className={cn("transition-all duration-300", isCollapsed ? "w-full px-2" : "w-full")}
+            className={cn(
+              "transition-all duration-300",
+              isCollapsed ? "w-full px-2" : "w-full"
+            )}
           >
             {isCollapsed ? (
               <ChevronRight className="h-4 w-4" />
@@ -72,7 +84,9 @@ export function NavDrawer() {
         {/* Footer Section */}
         {!isCollapsed && (
           <div className="px-6 py-4">
-            <p className="text-xs text-muted-foreground">{t("footer.copyright", { year: 2024 })}</p>
+            <p className="text-xs text-muted-foreground">
+              {t("footer.copyright", { year: new Date().getFullYear() })}
+            </p>
           </div>
         )}
       </div>

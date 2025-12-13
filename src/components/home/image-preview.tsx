@@ -46,7 +46,11 @@ export function ImagePreview() {
   }, []);
 
   // Use default light theme images before mounting to prevent hydration mismatch
-  const currentTheme = mounted ? (theme === "system" ? resolvedTheme : theme) : "light";
+  const currentTheme = mounted
+    ? theme === "system"
+      ? resolvedTheme
+      : theme
+    : "light";
   const isDark = currentTheme === "dark";
   const images = isMobile
     ? isDark
@@ -89,11 +93,12 @@ export function ImagePreview() {
             {images.length > 1 && (
               <>
                 <Button
-                  variant="ghost"
+                  variant="glass"
                   size="icon"
                   className={cn(
                     "absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-black/40 backdrop-blur-sm text-white hover:bg-black/60 transition-all duration-200 border border-white/20",
-                    currentIndex === 0 && "opacity-30 cursor-not-allowed hover:bg-black/40"
+                    currentIndex === 0 &&
+                      "opacity-30 cursor-not-allowed hover:bg-black/40"
                   )}
                   onClick={goToPrevious}
                   disabled={currentIndex === 0}
@@ -103,7 +108,7 @@ export function ImagePreview() {
                 </Button>
 
                 <Button
-                  variant="ghost"
+                  variant="glass"
                   size="icon"
                   className={cn(
                     "absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-black/40 backdrop-blur-sm text-white hover:bg-black/60 transition-all duration-200 border border-white/20",
@@ -127,7 +132,9 @@ export function ImagePreview() {
                     key={index}
                     className={cn(
                       "h-2 w-2 rounded-full transition-all duration-300",
-                      index === currentIndex ? "bg-white w-6" : "bg-white/50 hover:bg-white/70"
+                      index === currentIndex
+                        ? "bg-white w-6"
+                        : "bg-white/50 hover:bg-white/70"
                     )}
                     onClick={() => setCurrentIndex(index)}
                   />

@@ -19,7 +19,9 @@ export default function NotFound() {
           {/* 404 Icon */}
           <div className="flex justify-center">
             <div className="relative">
-              <div className="text-9xl font-bold text-primary/10 select-none">404</div>
+              <div className="text-9xl font-bold text-primary/10 select-none">
+                404
+              </div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-6xl">🔍</div>
               </div>
@@ -31,20 +33,24 @@ export default function NotFound() {
             <Heading level={"h1"} className="text-3xl md:text-4xl">
               {t("notFound.title")}
             </Heading>
-            <p className="text-muted-foreground text-lg">{t("notFound.description")}</p>
+            <p className="text-muted-foreground text-lg">
+              {t("notFound.description")}
+            </p>
           </div>
 
           {/* Suggestions */}
           <div className="pt-4 space-y-3">
-            <p className="text-sm text-muted-foreground">{t("notFound.suggestions")}</p>
+            <p className="text-sm text-muted-foreground">
+              {t("notFound.suggestions")}
+            </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Button asChild size="lg" className="gap-2">
+              <Button variant="glass" asChild size="lg" className="gap-2">
                 <Link href={ROUTES.HOME}>
                   <Home className="h-4 w-4" />
                   {t("notFound.goHome")}
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="gap-2">
+              <Button variant="glass" asChild size="lg" className="gap-2">
                 <Link href={ROUTES.DOWNLOAD}>
                   <ArrowLeft className="h-4 w-4" />
                   {t("notFound.visitDownloads")}
@@ -57,11 +63,17 @@ export default function NotFound() {
           <div className="pt-6 border-t">
             <p className="text-sm text-muted-foreground">
               {t("notFound.helpText")}{" "}
-              <Link href={ROUTES.ABOUT} className="text-primary hover:underline">
+              <Link
+                href={ROUTES.ABOUT}
+                className="text-primary hover:underline"
+              >
                 {t("notFound.aboutPage")}
               </Link>{" "}
               {t("notFound.or")}{" "}
-              <Link href={ROUTES.CHANGELOG} className="text-primary hover:underline">
+              <Link
+                href={ROUTES.CHANGELOG}
+                className="text-primary hover:underline"
+              >
                 {t("notFound.changelogLink")}
               </Link>
               .

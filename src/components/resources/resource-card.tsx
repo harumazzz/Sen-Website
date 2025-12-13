@@ -1,7 +1,13 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Cloud, HardDrive, ExternalLink } from "lucide-react";
 import { useTranslation } from "@/hooks/use-translation";
@@ -56,7 +62,7 @@ export function ResourceCard({
       </CardHeader>
 
       <CardContent className="flex-1 flex flex-col justify-end">
-        <Button asChild className="w-full" size="lg">
+        <Button variant="glass" asChild className="w-full" size="lg">
           <a href={url} target="_blank" rel="noopener noreferrer">
             <ExternalLink className="h-4 w-4 mr-2" />
             {t("resources.accessButton")}

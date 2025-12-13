@@ -2,14 +2,22 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations/fade-in";
+import {
+  FadeIn,
+  StaggerContainer,
+  StaggerItem,
+} from "@/components/animations/fade-in";
 import { useTranslation } from "@/hooks/use-translation";
 
 export function FeaturesSection() {
   const t = useTranslation();
 
   const handleDiscordClick = () => {
-    window.open("https://discord.gg/DxDmVDMdrq", "_blank", "noopener,noreferrer");
+    window.open(
+      "https://discord.gg/DxDmVDMdrq",
+      "_blank",
+      "noopener,noreferrer"
+    );
   };
 
   return (
@@ -30,6 +38,7 @@ export function FeaturesSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4">
               <StaggerItem>
                 <Button
+                  variant="glass"
                   asChild
                   size="sm"
                   className="w-full sm:w-auto px-6 py-2 text-sm font-semibold"
@@ -39,7 +48,7 @@ export function FeaturesSection() {
               </StaggerItem>
               <StaggerItem>
                 <Button
-                  variant="secondary"
+                  variant="glass"
                   size="sm"
                   onClick={handleDiscordClick}
                   className="w-full sm:w-auto px-6 py-2 text-sm font-semibold"

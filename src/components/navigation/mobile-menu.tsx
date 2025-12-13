@@ -3,7 +3,13 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { NAVIGATION_ITEMS } from "@/lib/routes";
 import { NavItem } from "./nav-item";
 import { Logo } from "@/components/ui/logo";
@@ -15,7 +21,12 @@ export function MobileMenu() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="lg:hidden" aria-label="Toggle menu">
+        <Button
+          variant="glass"
+          size="icon"
+          className="lg:hidden"
+          aria-label="Toggle menu"
+        >
           <Menu className="h-6 w-6" />
         </Button>
       </SheetTrigger>
@@ -42,7 +53,9 @@ export function MobileMenu() {
         <Separator />
 
         <div className="px-6 py-4">
-          <p className="text-xs text-muted-foreground">© 2025 Sen. All rights reserved.</p>
+          <p className="text-xs text-muted-foreground">
+            © {new Date().getFullYear()} Sen. All rights reserved.
+          </p>
         </div>
       </SheetContent>
     </Sheet>

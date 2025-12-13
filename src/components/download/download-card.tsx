@@ -47,7 +47,9 @@ export function DownloadCard({
 }: DownloadCardProps) {
   const t = useTranslation();
   const normalizedPlatform = platform.toLowerCase();
-  const Icon = PLATFORM_ICONS[normalizedPlatform as keyof typeof PLATFORM_ICONS] || Monitor;
+  const Icon =
+    PLATFORM_ICONS[normalizedPlatform as keyof typeof PLATFORM_ICONS] ||
+    Monitor;
 
   return (
     <Card
@@ -64,7 +66,9 @@ export function DownloadCard({
               <Icon className="h-5 w-5 text-primary" />
             </div>
             <div>
-              <CardTitle className="text-lg capitalize font-semibold">{platform}</CardTitle>
+              <CardTitle className="text-lg capitalize font-semibold">
+                {platform}
+              </CardTitle>
               <CardDescription className="mt-1 text-xs">
                 {t("download.stats.version")} {version}
               </CardDescription>
@@ -76,13 +80,19 @@ export function DownloadCard({
 
       <CardContent className="flex-1">
         {description && (
-          <p className="text-xs text-muted-foreground/90 mb-3 leading-relaxed">{description}</p>
+          <p className="text-xs text-muted-foreground/90 mb-3 leading-relaxed">
+            {description}
+          </p>
         )}
 
         <div className="space-y-2 pb-3 border-b border-border/50">
           <div className="flex items-center justify-between text-xs">
-            <span className="text-muted-foreground font-medium">{t("download.stats.file")}</span>
-            <span className="font-mono text-xs bg-muted px-2 py-0.5 rounded">{fileName}</span>
+            <span className="text-muted-foreground font-medium">
+              {t("download.stats.file")}
+            </span>
+            <span className="font-mono text-xs bg-muted px-2 py-0.5 rounded">
+              {fileName}
+            </span>
           </div>
         </div>
       </CardContent>
@@ -94,7 +104,7 @@ export function DownloadCard({
           releaseDate={releaseDate}
         />
 
-        <Button asChild className="w-full" size="sm">
+        <Button variant="outline" asChild className="w-full" size="sm">
           <a href={downloadUrl} target="_blank" rel="noopener noreferrer">
             <DownloadIcon className="h-3 w-3 mr-1.5" />
             {t("download.downloadButton")}

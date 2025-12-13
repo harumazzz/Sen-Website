@@ -13,7 +13,7 @@ export function Footer() {
   return (
     <footer className="w-full">
       {/* Links and Social Media Section */}
-      <div className="w-full bg-gradient-to-b from-black to-[#0A0A0A] dark:from-black dark:to-[#0A0A0A]">
+      <div className="w-full backdrop-blur-xl bg-gradient-to-b from-white/10 via-white/5 to-transparent dark:from-white/5 dark:via-white/2 dark:to-transparent border-t border-white/20 shadow-2xl">
         <div className="container mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           {/* Footer Links Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-8">

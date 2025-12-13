@@ -13,7 +13,7 @@ export function HeroSection() {
         {/* Logo */}
         <ScaleIn delay={0.1}>
           <div className="flex justify-center mb-3 sm:mb-3">
-            <div className="p-2 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 backdrop-blur-sm">
+            <div className="p-2 rounded-2xl backdrop-blur-xl bg-gradient-to-br from-white/20 to-white/10 border border-white/30 shadow-xl dark:from-white/10 dark:to-white/5 dark:border-white/20 transition-all duration-300">
               <Logo size="xl" className="w-12 h-12 sm:w-16 sm:h-16" />
             </div>
           </div>

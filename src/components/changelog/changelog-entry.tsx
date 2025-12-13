@@ -24,12 +24,12 @@ export function ChangelogEntry({ changelog, className }: ChangelogEntryProps) {
   return (
     <Card
       className={cn(
-        "mb-6 transition-all duration-300 hover:shadow-lg hover:border-primary/30",
-        "border border-border/50",
+        "transition-all duration-300 hover:shadow-lg hover:border-primary/30",
+        "border border-border/50 p-6 sm:p-8",
         className
       )}
     >
-      <div className="p-6 sm:p-8">
+      <div>
         {/* Header with logo and badges */}
         <div className="flex items-start justify-between gap-4 mb-6">
           <Image

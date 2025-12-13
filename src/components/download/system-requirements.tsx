@@ -20,7 +20,11 @@ export function SystemRequirements() {
   const [selectedPlatform, setSelectedPlatform] = useState<Platform>("Windows");
 
   const windowsRequirements: RequirementRow[] = [
-    { category: "OS", value: t("download.systemRequirements.windows.os"), isHeader: true },
+    {
+      category: "OS",
+      value: t("download.systemRequirements.windows.os"),
+      isHeader: true,
+    },
     {
       category: t("download.systemRequirements.windows.runtime"),
       value: t("download.systemRequirements.windows.runtimeValue"),
@@ -36,7 +40,11 @@ export function SystemRequirements() {
   ];
 
   const androidRequirements: RequirementRow[] = [
-    { category: "OS", value: t("download.systemRequirements.android.os"), isHeader: true },
+    {
+      category: "OS",
+      value: t("download.systemRequirements.android.os"),
+      isHeader: true,
+    },
     {
       category: t("download.systemRequirements.android.memory"),
       value: t("download.systemRequirements.android.memoryValue"),
@@ -51,7 +59,8 @@ export function SystemRequirements() {
     },
   ];
 
-  const requirements = selectedPlatform === "Windows" ? windowsRequirements : androidRequirements;
+  const requirements =
+    selectedPlatform === "Windows" ? windowsRequirements : androidRequirements;
 
   return (
     <Card className="border border-border/50">
@@ -101,10 +110,16 @@ export function SystemRequirements() {
                   key={index}
                   className={cn(
                     req.isHeader && "bg-muted/50",
-                    index !== requirements.length - 1 && "border-b border-border/50"
+                    index !== requirements.length - 1 &&
+                      "border-b border-border/50"
                   )}
                 >
-                  <td className={cn("px-4 py-2 font-medium text-xs", req.isHeader && "font-bold")}>
+                  <td
+                    className={cn(
+                      "px-4 py-2 font-medium text-xs",
+                      req.isHeader && "font-bold"
+                    )}
+                  >
                     {req.category}
                   </td>
                   <td

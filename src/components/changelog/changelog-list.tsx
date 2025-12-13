@@ -14,7 +14,12 @@ interface ChangelogListProps {
   onRetry?: () => void;
 }
 
-export function ChangelogList({ entries, isLoading, error, onRetry }: ChangelogListProps) {
+export function ChangelogList({
+  entries,
+  isLoading,
+  error,
+  onRetry,
+}: ChangelogListProps) {
   // Error State - matches Flutter _ErrorView
   if (error) {
     return (
@@ -22,7 +27,7 @@ export function ChangelogList({ entries, isLoading, error, onRetry }: ChangelogL
         <AlertCircle className="h-12 w-12 text-red-500" />
         <p className="text-center">Error: {error}</p>
         {onRetry && (
-          <Button onClick={onRetry} variant="outline" className="mt-6">
+          <Button onClick={onRetry} variant="glass" className="mt-6">
             <RefreshCw className="h-4 w-4 mr-2" />
             Try Again
           </Button>
@@ -69,7 +74,7 @@ export function ChangelogList({ entries, isLoading, error, onRetry }: ChangelogL
 
   // Data State - matches Flutter ChangelogStateLoaded
   return (
-    <div>
+    <div className="space-y-6">
       {entries.map((entry, index) => (
         <ChangelogEntry key={entry.version || index} changelog={entry} />
       ))}

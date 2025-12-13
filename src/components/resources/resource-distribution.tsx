@@ -41,7 +41,7 @@ export function ResourceDistribution() {
         ))}
       </div>
 
-      <div className="rounded-lg border border-border/50 bg-card p-6 space-y-4">
+      <div className="rounded-lg backdrop-blur-xl bg-gradient-to-br from-white/20 to-white/10 border border-white/30 shadow-xl p-6 space-y-4 dark:from-white/10 dark:to-white/5 dark:border-white/20 transition-all duration-300">
         <h3 className="text-lg font-semibold">
           {t("resources.howToUse")}
         </h3>
