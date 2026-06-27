@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import useEmblaCarousel from "embla-carousel-react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 
@@ -25,115 +25,148 @@ const mobileDarkImages = ["/assets/dark/phone.webp"];
 const mobileLightImages = ["/assets/light/phone.webp"];
 
 export function ImagePreview() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const { theme, resolvedTheme } = useTheme();
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const { resolvedTheme } = useTheme();
   const [isMobile, setIsMobile] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-  // Prevent hydration mismatch by only rendering theme-dependent content after mount
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: false,
+    dragFree: false,
+    align: "center",
+  });
+
+  // Single mount effect — matchMedia instead of resize listener
   useEffect(() => {
     setMounted(true);
+    const mq = window.matchMedia("(max-width: 599px)");
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
   }, []);
 
-  // Detect mobile on client side
+  // Keep selectedIndex in sync with Embla
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 600);
+    if (!emblaApi) return;
+    const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
+    emblaApi.on("select", onSelect);
+    emblaApi.on("reInit", onSelect);
+    return () => {
+      emblaApi.off("select", onSelect);
+      emblaApi.off("reInit", onSelect);
     };
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+  }, [emblaApi]);
 
-  // Use default light theme images before mounting to prevent hydration mismatch
-  const currentTheme = mounted ? (theme === "system" ? resolvedTheme : theme) : "light";
-  const isDark = currentTheme === "dark";
+  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+  const scrollTo = useCallback((i: number) => emblaApi?.scrollTo(i), [emblaApi]);
+
+  const isDark = mounted ? resolvedTheme === "dark" : false;
   const images = isMobile
-    ? isDark
-      ? mobileDarkImages
-      : mobileLightImages
-    : isDark
-      ? desktopDarkImages
-      : desktopLightImages;
+    ? isDark ? mobileDarkImages : mobileLightImages
+    : isDark ? desktopDarkImages : desktopLightImages;
 
-  const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : prev));
-  };
+  // Reinitialize Embla when image list changes
+  useEffect(() => {
+    emblaApi?.reInit();
+  }, [emblaApi, images]);
 
-  const goToNext = () => {
-    setCurrentIndex((prev) => (prev < images.length - 1 ? prev + 1 : prev));
-  };
+  const canPrev = selectedIndex > 0;
+  const canNext = selectedIndex < images.length - 1;
+  const showNav = images.length > 1;
 
   return (
-    <section className="w-full py-6 sm:py-8 lg:py-10">
+    <section className="relative w-full py-8 sm:py-12 lg:py-16 overflow-hidden">
+      {/* Dynamic backlighting glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] sm:w-[600px] lg:w-[800px] h-[200px] sm:h-[300px] lg:h-[400px] rounded-full bg-primary/10 blur-[80px] lg:blur-[120px] pointer-events-none -z-10 scale-95" />
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div
-            className={cn(
-              "relative rounded-xl overflow-hidden shadow-lg border border-border/20",
-              isMobile ? "aspect-[9/16]" : "aspect-[16/9]"
-            )}
-          >
-            {/* Main Image */}
-            <div className="relative w-full h-full bg-muted">
-              <Image
-                src={images[currentIndex]}
-                alt={`Screenshot ${currentIndex + 1}`}
-                fill
-                className="object-cover"
-                priority={currentIndex === 0}
-              />
-            </div>
-
-            {/* Navigation Buttons */}
-            {images.length > 1 && (
-              <>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className={cn(
-                    "absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-black/40 backdrop-blur-sm text-white hover:bg-black/60 transition-all duration-200 border border-white/20",
-                    currentIndex === 0 && "opacity-30 cursor-not-allowed hover:bg-black/40"
-                  )}
-                  onClick={goToPrevious}
-                  disabled={currentIndex === 0}
-                >
-                  <ChevronLeft className="h-6 w-6 sm:h-7 sm:w-7" />
-                  <span className="sr-only">Previous image</span>
-                </Button>
-
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className={cn(
-                    "absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-black/40 backdrop-blur-sm text-white hover:bg-black/60 transition-all duration-200 border border-white/20",
-                    currentIndex === images.length - 1 &&
-                      "opacity-30 cursor-not-allowed hover:bg-black/40"
-                  )}
-                  onClick={goToNext}
-                  disabled={currentIndex === images.length - 1}
-                >
-                  <ChevronRight className="h-6 w-6 sm:h-7 sm:w-7" />
-                  <span className="sr-only">Next image</span>
-                </Button>
-              </>
-            )}
-
-            {/* Indicators */}
-            {images.length > 1 && (
-              <div className="absolute bottom-4 sm:bottom-5 left-1/2 -translate-x-1/2 flex gap-1.5 px-2.5 py-1.5 rounded-full bg-black/40 backdrop-blur-sm border border-white/20">
-                {images.map((_, index) => (
-                  <button
-                    key={index}
-                    className={cn(
-                      "h-2 w-2 rounded-full transition-all duration-300",
-                      index === currentIndex ? "bg-white w-6" : "bg-white/50 hover:bg-white/70"
-                    )}
-                    onClick={() => setCurrentIndex(index)}
-                  />
-                ))}
+        <div className="max-w-5xl mx-auto">
+          {/* Glassmorphic border container */}
+          <div className="relative rounded-2xl p-1.5 sm:p-2.5 bg-background/30 backdrop-blur-md border border-border/80 shadow-2xl shadow-primary/5">
+            <div
+              className={cn(
+                "relative rounded-xl overflow-hidden border border-border/40 bg-muted",
+                isMobile ? "aspect-[9/16]" : "aspect-[16/9]"
+              )}
+            >
+              {/* Embla viewport */}
+              <div ref={emblaRef} className="absolute inset-0 overflow-hidden">
+                <div className="flex h-full">
+                  {images.map((src, i) => (
+                    <div key={src} className="relative flex-[0_0_100%] h-full">
+                      <Image
+                        src={src}
+                        alt={`Screenshot ${i + 1}`}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1024px"
+                        className="object-cover"
+                        priority={i === 0}
+                        draggable={false}
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
-            )}
+
+              {/* Prev button — frosted glass */}
+              {showNav && (
+                <button
+                  onClick={scrollPrev}
+                  disabled={!canPrev}
+                  aria-label="Previous image"
+                  className={cn(
+                    "absolute left-4 top-1/2 -translate-y-1/2 z-10",
+                    "flex items-center justify-center h-10 w-10 rounded-full",
+                    "bg-background/40 backdrop-blur-md border border-primary/20",
+                    "text-foreground shadow-lg transition-all duration-200",
+                    "hover:bg-background/80 hover:border-primary/40 hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                    !canPrev ? "opacity-20 cursor-not-allowed" : "opacity-100"
+                  )}
+                >
+                  <ChevronLeft className="h-5 w-5" />
+                </button>
+              )}
+
+              {/* Next button — frosted glass */}
+              {showNav && (
+                <button
+                  onClick={scrollNext}
+                  disabled={!canNext}
+                  aria-label="Next image"
+                  className={cn(
+                    "absolute right-4 top-1/2 -translate-y-1/2 z-10",
+                    "flex items-center justify-center h-10 w-10 rounded-full",
+                    "bg-background/40 backdrop-blur-md border border-primary/20",
+                    "text-foreground shadow-lg transition-all duration-200",
+                    "hover:bg-background/80 hover:border-primary/40 hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                    !canNext ? "opacity-20 cursor-not-allowed" : "opacity-100"
+                  )}
+                >
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+              )}
+
+              {/* Dot indicators */}
+              {showNav && (
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex items-center gap-1.5 bg-background/30 backdrop-blur-sm px-3 py-1.5 rounded-full border border-border/20">
+                  {images.map((_, i) => (
+                    <button
+                      key={i}
+                      aria-label={`Go to screenshot ${i + 1}`}
+                      onClick={() => scrollTo(i)}
+                      className={cn(
+                        "h-1.5 rounded-full transition-all duration-200",
+                        i === selectedIndex
+                          ? "w-5 bg-foreground"
+                          : "w-1.5 bg-foreground/40 hover:bg-foreground/75"
+                      )}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

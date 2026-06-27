@@ -11,10 +11,6 @@
       "title": "Sen herunterladen | Sen - PvZ2 Modding-Tool",
       "description": "Laden Sie Sen für Windows, Android und andere Plattformen herunter. Laden Sie die neueste Version herunter und beginnen Sie noch heute mit dem Modden von PvZ2!"
     },
-    "changelog": {
-      "title": "Changelog | Sen - PvZ2 Modding-Tool",
-      "description": "Sieh dir das vollständige Changelog von Sen an. Sieh dir alle Updates, neue Funktionen, Bugfixes und Verbesserungen in allen Versionen an."
-    },
     "notFound": {
       "title": "404 - Seite nicht gefunden | Sen",
       "description": "Die gesuchte Seite existiert nicht."
@@ -24,13 +20,11 @@
     "home": "Startseite",
     "about": "Über",
     "download": "Herunterladen",
-    "changelog": "Changelog",
     "collapse": "Minimieren",
     "welcomeDescription": "Willkommen bei Sen - PvZ2 Modding-Tool",
     "aboutDescription": "Erfahre mehr über Sen und seine Funktionen",
     "downloadDescription": "Lade Sen für deine Plattform herunter",
-    "resourcesDescription": "Zugriff auf Worldmap-Ressourcen für PvZ2-Modding",
-    "changelogDescription": "Sieh dir Release-Notizen und Updates an"
+    "resourcesDescription": "Zugriff auf Worldmap-Ressourcen für PvZ2-Modding"
   },
   "hero": {
     "tagline": "Erstelle deine PvZ2-Mods schneller mit Sen!",
@@ -40,38 +34,39 @@
   },
   "about": {
     "pageTitle": "Über Sen - PvZ2 Modding-Tool",
-    "mainTitle": "Sen.Environment",
-    "subtitle": "Das ultimative Modding-Tool für PvZ2",
-    "sections": {
-      "about": {
-        "title": "Über",
-        "description": "Sen.Environment ist ein Modding-Tool für PvZ2, das den Modding-Prozess vereinfachen und das Spielerlebnis verbessern soll."
+    "mainTitle": "Über das Projekt",
+    "subtitle": "Ein visueller Arbeitsbereich für PvZ2-Anpassungen.",
+    "overview": {
+      "title": "Projektübersicht",
+      "p1": "Sen ist ein visueller Editor und eine Utility-Suite zur Rationalisierung der Anpassung von Plants vs. Zombies 2. Es vereinfacht den Modding-Prozess, indem es die manuelle Dateibearbeitung durch strukturierte visuelle Steuerelemente ersetzt.",
+      "p2": "Egal, ob Sie Karten entwerfen, Animationen anzeigen oder Spieldateien verarbeiten, Sen bietet eine zentralisierte Umgebung für Ihren Workflow."
+    },
+    "features": {
+      "title": "Kernfunktionen",
+      "mapEditor": {
+        "title": "Karten-Editor",
+        "desc": "Entwerfen Sie Raseneinstellungen und visuelle Kartenknoten."
       },
-      "platform": {
-        "title": "Plattformunterstützung",
-        "windows": "Windows 10+",
-        "windowsDescription": "Sen.Environment ist vollständig mit Windows kompatibel und bietet ein nahtloses Erlebnis zum Modden von PvZ2.",
-        "android": "Android 10.0+",
-        "androidDescription": "Sen.Environment ist auch auf Android verfügbar und ermöglicht es Benutzern, auf ihrer bevorzugten Plattform zu modden."
+      "assets": {
+        "title": "Animations-Viewer",
+        "desc": "Vorschau von Spritesheets, Animationszuständen und Partikeln."
       },
-      "modules": {
-        "title": "Module",
-        "kernel": "Kernel",
-        "kernelDescription": "Der Kern von Sen.Environment, der wesentliche Funktionalitäten und Low-Level-Operationen bereitstellt.",
-        "shell": "Shell",
-        "shellDescription": "Eine Benutzeroberfläche zur Befehlsverarbeitung und Interaktion mit dem Kernel.",
-        "script": "Skript",
-        "scriptDescription": "Ein Modul für Automatisierungs- und Skriptfunktionen, mit dem Benutzer benutzerdefinierte Skripte erstellen können.",
-        "modding": "Modding",
-        "moddingDescription": "Ein Modul zur Spieldateimodifizierung und -verwaltung, mit dem Benutzer einfach Mods erstellen und verwalten können."
-      },
-      "tech": {
-        "title": "Verwendete Technologien",
-        "meson": "Meson",
-        "mesonDescription": "Meson ist ein Build-System, das schnell und benutzerfreundlich gestaltet ist. Es wird zum Erstellen des Sen-Projekts verwendet.",
-        "flutter": "Flutter",
-        "flutterDescription": "Flutter ist ein UI-Toolkit, das zum Erstellen des Sen-Projekts verwendet wird. Mit ihm kannst du schöne und responsive Benutzeroberflächen für mobile, Web- und Desktop-Anwendungen erstellen."
+      "automation": {
+        "title": "Spieldatei-Prozessor",
+        "desc": "Verarbeiten, analysieren und ändern Sie PvZ2-Spielressourcen."
       }
+    },
+    "details": {
+      "title": "Projektdetails",
+      "release": "Neueste Version",
+      "stable": "Stabil",
+      "compatibility": "Kompatibilität"
+    },
+    "support": {
+      "title": "Support & Feedback",
+      "text": "Sen wird aktiv entwickelt. Wenn Sie auf Fehler stoßen oder Hilfe benötigen, treten Sie unserem Discord-Server bei oder melden Sie Fehler auf GitHub.",
+      "issuesButton": "Fehler melden",
+      "discordButton": "Discord-Server"
     }
   },
   "download": {
@@ -127,11 +122,31 @@
         "title": "Sen starten",
         "description": "Nach der Installation kannst du Sen von deinem Desktop oder dem Startmenü aus starten."
       }
-    }
-  },
-  "changelog": {
-    "title": "Changelog",
-    "subtitle": "Bleib auf dem Laufenden mit den neuesten Änderungen und Verbesserungen"
+    },
+    "thankYou": {
+      "title": "Vielen Dank für den Download von Sen!",
+      "description": "Dein Download hat begonnen. Tritt unserer Discord-Community bei, um dich mit anderen Moddern auszutauschen, Unterstützung zu erhalten und deine Kreationen zu teilen!",
+      "discordButton": "Discord beitreten",
+      "closeButton": "Fertig"
+    },
+    "assets": {
+      "scg": {
+        "title": "SCG Downloader",
+        "description": "Eine einfache App zum Herunterladen von SCG für deine Mod."
+      },
+      "modding": {
+        "title": "Modding",
+        "description": "Schalte mehr Modding-Potenzial frei mit dem Animation Viewer und dem Map Editor."
+      },
+      "main": {
+        "title": "Hauptwerkzeug",
+        "description": "Zur Verarbeitung von Spieldateien."
+      }
+    },
+    "failedToLoad": "Downloads konnten nicht geladen werden: {error}",
+    "noDownloads": "Derzeit sind keine Downloads verfügbar.",
+    "file": "Datei",
+    "files": "Dateien"
   },
   "resources": {
     "title": "Worldmap-Ressourcen",
@@ -154,7 +169,6 @@
     "links": {
       "home": "Startseite",
       "download": "Herunterladen",
-      "changelog": "Changelog",
       "resources": "Ressourcen",
       "contact": "Kontaktiere uns",
       "documentation": "Dokumentation",
@@ -170,9 +184,7 @@
     "goHome": "Zur Startseite gehen",
     "visitDownloads": "Besuche Downloads",
     "helpText": "Benötigen Sie Hilfe? Sieh dir an",
-    "aboutPage": "Über-Seite",
-    "or": "oder sieh dir an",
-    "changelogLink": "Changelog"
+    "aboutPage": "Über-Seite"
   },
   "common": {
     "loading": "Wird geladen...",
@@ -191,5 +203,53 @@
     "sort": "Sortieren",
     "version": "Version",
     "sen": "Sen"
+  },
+  "home": {
+    "features": {
+      "title": "Entfessle dein Modding-Potenzial",
+      "subtitle": "Entdecke leistungsstarke Tools, die das Modding von PvZ2 intuitiv, schnell und zugänglich machen.",
+      "mapEditor": {
+        "title": "Karten-Editor",
+        "description": "Gestalte benutzerdefinierte Kartenknoten-Verbindungen, Rasenflächen und Leveleinstellungen visuell."
+      },
+      "animEditor": {
+        "title": "Animations-Viewer",
+        "description": "Vorschau von Spritesheets, Überprüfung von Animationszuständen und Inspektion von Partikelkonfigurationen."
+      },
+      "scripting": {
+        "title": "Spieldatei-Prozessor",
+        "description": "Verarbeite, analysiere und bearbeite Spieldatendateien und Spiel-Assets."
+      },
+      "modManager": {
+        "title": "Spielressourcen-Packer",
+        "description": "Kompiliere und packe PvZ2-Spielressourcen und -Assets in vertriebsfertige Formate."
+      },
+      "versionManager": {
+        "title": "Version-Switcher",
+        "description": "Verwalte mehrere Spielinstallationen und wechsle nahtlos zwischen den Versionen, um die Kompatibilität deiner Mod zu testen."
+      },
+      "crossPlatform": {
+        "title": "Plattformübergreifende Unterstützung",
+        "description": "Modde auf deinem bevorzugten Setup mit voller Kompatibilität zwischen Windows-Desktop und Android-Geräten."
+      }
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Alles, was du über das Sen PvZ2 Modding-Tool wissen musst.",
+      "q1": "Benötige ich Programmierkenntnisse, um Sen zu verwenden?",
+      "a1": "Nein! Sen ist visuell gestaltet. Du kannst Karten bearbeiten, Animationen in der Vorschau anzeigen und Spieldateien über unsere interaktiven Oberflächen verarbeiten.",
+      "q2": "Welche Plattformen unterstützt Sen?",
+      "a2": "Sen läuft reibungslos auf Windows 10/11 und Android 8.0+. Du kannst deine Mods auf Desktop- und Mobilplattformen bearbeiten und testen.",
+      "q3": "Wie wird Sen unterstützt?",
+      "a3": "Sen wird aktiv aktualisiert. Wenn du auf Probleme stößt oder Hilfe benötigst, tritt unserem Discord-Server bei oder erstelle einen Fehlerbericht auf GitHub.",
+      "q4": "Wie importiere ich Assets oder Kartenressourcen?",
+      "a4": "Du kannst vollständige Karten-Asset-Pakete über unseren Ressourcen-Tab herunterladen und sie direkt im Einstellungsmenü von Sen verknüpfen."
+    },
+    "community": {
+      "title": "Tritt unserer Modding-Community bei",
+      "description": "Verbinde dich mit Tausenden von PvZ2-Moddern, teile deine Kreationen, erhalte Vorlagen und hol dir Hilfe von erfahrenen Entwicklern.",
+      "discordButton": "Tritt dem Discord-Server bei",
+      "githubButton": "Feedback senden"
+    }
   }
 }

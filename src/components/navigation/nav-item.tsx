@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { LucideIcon } from "lucide-react";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { useTranslation } from "@/hooks/use-translation";
 
 interface NavItemProps {
@@ -13,54 +12,28 @@ interface NavItemProps {
   icon?: LucideIcon;
   onClick?: () => void;
   className?: string;
-  isCollapsed?: boolean;
 }
 
-export function NavItem({
-  href,
-  label,
-  icon: Icon,
-  onClick,
-  className,
-  isCollapsed,
-}: NavItemProps) {
+export function NavItem({ href, label, icon: Icon, onClick, className }: NavItemProps) {
   const t = useTranslation();
   const pathname = usePathname();
-  const isActive = pathname === href;
+  const isActive =
+    href === "/" ? pathname === "/" || pathname.endsWith("/") : pathname.includes(href);
 
-  // Translate the label
-  const translatedLabel = t(label);
-
-  const content = (
+  return (
     <Link
       href={href}
       onClick={onClick}
       className={cn(
         "flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200",
-        "hover:bg-accent hover:text-accent-foreground",
+        "hover:bg-primary/10 hover:text-primary",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-        isActive && "bg-accent text-accent-foreground font-medium",
-        isCollapsed && "justify-center px-2",
+        isActive && "bg-primary/12 text-primary font-semibold",
         className
       )}
     >
       {Icon && <Icon className="h-5 w-5 flex-shrink-0" />}
-      {!isCollapsed && <span>{translatedLabel}</span>}
+      <span>{t(label)}</span>
     </Link>
   );
-
-  if (isCollapsed) {
-    return (
-      <TooltipProvider delayDuration={0}>
-        <Tooltip>
-          <TooltipTrigger asChild>{content}</TooltipTrigger>
-          <TooltipContent side="right">
-            <p>{translatedLabel}</p>
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-    );
-  }
-
-  return content;
 }

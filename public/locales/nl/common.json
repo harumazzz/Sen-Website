@@ -11,10 +11,6 @@
       "title": "Download Sen | Sen - PvZ2 Modificatie Tool",
       "description": "Download Sen voor Windows, Android en andere platforms. Download de nieuwste versie en begin vandaag nog met het modificeren van PvZ2!"
     },
-    "changelog": {
-      "title": "Changelog | Sen - PvZ2 Modificatie Tool",
-      "description": "Bekijk de volledige changelog van Sen. Bekijk alle updates, nieuwe functies, bugfixes en verbeteringen in alle versies."
-    },
     "notFound": {
       "title": "404 - Pagina niet gevonden | Sen",
       "description": "De pagina die je zoekt, bestaat niet."
@@ -25,13 +21,11 @@
     "about": "Over",
     "download": "Download",
     "resources": "Bronnen",
-    "changelog": "Changelog",
     "collapse": "Samenvouwen",
     "welcomeDescription": "Welkom bij Sen - PvZ2 Modificatie Tool",
     "aboutDescription": "Meer informatie over Sen en zijn functies",
     "downloadDescription": "Download Sen voor uw platform",
-    "resourcesDescription": "Toegang tot wereldkaart bronnen voor PvZ2 modding",
-    "changelogDescription": "Bekijk releaseopmerkingen en updates"
+    "resourcesDescription": "Toegang tot wereldkaart bronnen voor PvZ2 modding"
   },
   "hero": {
     "tagline": "Bouw je PvZ2-mods sneller met Sen!",
@@ -40,39 +34,40 @@
     "discordButton": "Discord-server"
   },
   "about": {
-    "pageTitle": "Over Sen - PvZ2 Modificatie Tool",
-    "mainTitle": "Sen.Environment",
-    "subtitle": "Het ultieme modificatiegestuikje voor PvZ2",
-    "sections": {
-      "about": {
-        "title": "Over",
-        "description": "Sen.Environment is een modificatiegestuikje voor PvZ2, ontworpen om het modificatieproces te vereenvoudigen en de spelervaring te verbeteren."
+    "pageTitle": "Over Sen - PvZ2 Modding Tool",
+    "mainTitle": "Over het Project",
+    "subtitle": "Een visuele werkruimte voor PvZ2-aanpassingen.",
+    "overview": {
+      "title": "Projectoverzicht",
+      "p1": "Sen is een visuele editor en utility-suite die is gebouwd om de aanpassing van Plants vs. Zombies 2 te stroomlijnen. Het vereenvoudigt het modden door handmatige bestandsbewerking te vervangen door gestructureerde visuele bedieningselementen.",
+      "p2": "Of u nu kaarten ontwerpt, animaties bekijkt of spelbestanden verwerkt, Sen biedt een gecentraliseerde omgeving."
+    },
+    "features": {
+      "title": "Belangrijkste Kenmerken",
+      "mapEditor": {
+        "title": "Kaarteditor",
+        "desc": "Ontwerp gazoninstellingen en visuele kaartknooppunten."
       },
-      "platform": {
-        "title": "Platformondersteuning",
-        "windows": "Windows 10+",
-        "windowsDescription": "Sen.Environment is volledig compatibel met Windows en biedt een naadloze ervaring voor het modificeren van PvZ2.",
-        "android": "Android 10.0+",
-        "androidDescription": "Sen.Environment is ook beschikbaar op Android, waarmee gebruikers kunnen genieten van modificatie op hun favoriete platform."
+      "assets": {
+        "title": "Animatieviewer",
+        "desc": "Voorweergave van spritesheets, animatiestaten en deeltjesinspectie."
       },
-      "modules": {
-        "title": "Modules",
-        "kernel": "Kernel",
-        "kernelDescription": "De kern van Sen.Environment, die essentiële functionaliteiten en laagstaande operaties biedt.",
-        "shell": "Shell",
-        "shellDescription": "Een gebruikersinterface voor opdrachtverwerking en interactie met de kernel.",
-        "script": "Script",
-        "scriptDescription": "Een module voor automatiserings- en scriptmogelijkheden, waarmee gebruikers aangepaste scripts kunnen maken.",
-        "modding": "Modificatie",
-        "moddingDescription": "Een module voor spelbestandwijziging en -beheer, waarmee gebruikers eenvoudig mods kunnen maken en beheren."
-      },
-      "tech": {
-        "title": "Gebruikte technologieën",
-        "meson": "Meson",
-        "mesonDescription": "Meson is een bouwsysteem dat is ontworpen om snel en gebruiksvriendelijk te zijn. Het wordt gebruikt om het Sen-project te bouwen.",
-        "flutter": "Flutter",
-        "flutterDescription": "Flutter is een UI-toolkit die wordt gebruikt om het Sen-project te bouwen. Het stelt je in staat om mooie en responsieve gebruikersinterfaces voor mobiele, web- en desktoptoepassingen te bouwen."
+      "automation": {
+        "title": "Spelbestandsprocessor",
+        "desc": "Verwerk, analyseer en wijzig PvZ2-spelbronnen."
       }
+    },
+    "details": {
+      "title": "Projectdetails",
+      "release": "Laatste Release",
+      "stable": "Stabiel",
+      "compatibility": "Compatibiliteit"
+    },
+    "support": {
+      "title": "Ondersteuning & Feedback",
+      "text": "Sen wordt actief ontwikkeld. Als u bugs tegenkomt, hulp nodig heeft of functies wilt voorstellen, sluit u dan aan bij onze Discord of meld problemen op GitHub.",
+      "issuesButton": "Meld een Probleem",
+      "discordButton": "Discord-server"
     }
   },
   "download": {
@@ -128,11 +123,31 @@
         "title": "Start Sen",
         "description": "Nadat u het hebt geïnstalleerd, kunt u Sen starten vanaf uw bureaublad of startmenu."
       }
-    }
-  },
-  "changelog": {
-    "title": "Changelog",
-    "subtitle": "Blijf op de hoogte van de nieuwste wijzigingen en verbeteringen"
+    },
+    "thankYou": {
+      "title": "Bedankt voor het downloaden van Sen!",
+      "description": "Je download is gestart. Word lid van onze Discord-community om in contact te komen met andere modders, ondersteuning te krijgen en je creaties te delen!",
+      "discordButton": "Lid worden van Discord",
+      "closeButton": "Klaar"
+    },
+    "assets": {
+      "scg": {
+        "title": "SCG Downloader",
+        "description": "Een eenvoudige app om SCG te downloaden naar je mod."
+      },
+      "modding": {
+        "title": "Modding",
+        "description": "Ontgrendel meer moddingpotentieel met de Animation Viewer en Map Editor."
+      },
+      "main": {
+        "title": "Hoofdprogramma",
+        "description": "Voor het verwerken van spelbestanden."
+      }
+    },
+    "failedToLoad": "Laden van downloads mislukt: {error}",
+    "noDownloads": "Er zijn momenteel geen downloads beschikbaar.",
+    "file": "bestand",
+    "files": "bestanden"
   },
   "resources": {
     "title": "Wereldkaart Bronnen",
@@ -155,7 +170,6 @@
     "links": {
       "home": "Home",
       "download": "Downloaden",
-      "changelog": "Changelog",
       "resources": "Bronnen",
       "contact": "Neem contact met ons op",
       "documentation": "Documentatie",
@@ -171,9 +185,7 @@
     "goHome": "Ga naar de homepage",
     "visitDownloads": "Bezoek downloads",
     "helpText": "Hulp nodig? Bekijk onze",
-    "aboutPage": "Over pagina",
-    "or": "of bekijk de",
-    "changelogLink": "Changelog"
+    "aboutPage": "Over pagina"
   },
   "common": {
     "loading": "Aan het laden...",
@@ -192,5 +204,53 @@
     "sort": "Sorteren",
     "version": "Versie",
     "sen": "Sen"
+  },
+  "home": {
+    "features": {
+      "title": "Ontketen je Modding-potentieel",
+      "subtitle": "Ontdek krachtige tools die zijn gebouwd om PvZ2-modding intuïtief, snel en toegankelijk te maken.",
+      "mapEditor": {
+        "title": "Kaarteditor",
+        "description": "Ontwerp visueel aangepaste kaartknooppuntverbindingen, gazons en niveau-instellingen."
+      },
+      "animEditor": {
+        "title": "Animatieviewer",
+        "description": "Bekijk previews van spritesheets, controleer animatiestatussen en inspecteer deeltjesconfiguraties."
+      },
+      "scripting": {
+        "title": "Spelbestandenverwerker",
+        "description": "Verwerk, analyseer en bewerk spelgegevensbestanden en spelactiva (assets)."
+      },
+      "modManager": {
+        "title": "Spelbronnenpakker",
+        "description": "Compileer en pak PvZ2-spelbronnen en -assets in naar distributieklare formaten."
+      },
+      "versionManager": {
+        "title": "Versiekiezer",
+        "description": "Beheer meerdere spelinstallaties en wissel naadloos van versie om de compatibiliteit van je mod te testen."
+      },
+      "crossPlatform": {
+        "title": "Cross-platform ondersteuning",
+        "description": "Mod op je favoriete installatie met volledige compatibiliteit op Windows-desktop en Android-apparaten."
+      }
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "subtitle": "Alles wat je moet weten over de Sen PvZ2 modding tool.",
+      "q1": "Heb ik codeerkennis nodig om Sen te gebruiken?",
+      "a1": "Nee! Sen is ontworpen om visueel te zijn. Je kunt kaarten bewerken, animaties bekijken en spelbestanden verwerken via onze interactieve interfaces.",
+      "q2": "Welke platforms ondersteunt Sen?",
+      "a2": "Sen draait soepel op Windows 10/11 en Android 8.0+. Je kunt je mods bewerken en testen op zowel desktop- als mobiele platforms.",
+      "q3": "Hoe wordt Sen ondersteund?",
+      "a3": "Sen wordt actief bijgewerkt. Als je problemen ondervindt of hulp nodig hebt, sluit je dan aan bij onze Discord-server of dien een probleemrapport in op GitHub.",
+      "q4": "Hoe importeer ik assets of kaartbronnen?",
+      "a4": "Je kunt volledige kaartassetpakketten downloaden via ons tabblad Bronnen (Resources) en ze rechtstreeks koppelen in het instellingenmenu van Sen."
+    },
+    "community": {
+      "title": "Word lid van onze Modding-community",
+      "description": "Maak contact met duizenden PvZ2-modders, deel je creaties, download sjablonen en krijg hulp van ervaren makers.",
+      "discordButton": "Lid worden van Discord-server",
+      "githubButton": "Feedback indienen"
+    }
   }
 }

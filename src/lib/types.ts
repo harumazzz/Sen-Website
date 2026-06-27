@@ -36,26 +36,6 @@ export interface GitHubAuthor {
   html_url: string;
 }
 
-/**
- * Changelog Types
- */
-
-export interface Changelog {
-  id: string;
-  version: string;
-  date: string;
-  changes: ChangeItem[];
-  title?: string;
-  description?: string;
-}
-
-export interface ChangeItem {
-  id: string;
-  type: ChangeType;
-  description: string;
-}
-
-export type ChangeType = "feature" | "fix" | "improvement" | "breaking" | "deprecated";
 
 /**
  * Download Types

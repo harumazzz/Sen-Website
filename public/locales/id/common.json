@@ -11,10 +11,6 @@
       "title": "Unduh Sen | Sen - Alat Modifikasi PvZ2",
       "description": "Unduh Sen untuk Windows, Android, dan platform lainnya. Dapatkan versi terbaru dan mulai memodifikasi PvZ2 hari ini!"
     },
-    "changelog": {
-      "title": "Catatan Perubahan | Sen - Alat Modifikasi PvZ2",
-      "description": "Lihat catatan perubahan lengkap Sen. Lihat semua pembaruan, fitur baru, perbaikan bug, dan peningkatan di semua versi."
-    },
     "notFound": {
       "title": "404 - Halaman Tidak Ditemukan | Sen",
       "description": "Halaman yang Anda cari tidak ada."
@@ -24,13 +20,11 @@
     "home": "Beranda",
     "about": "Tentang",
     "download": "Unduh",
-    "changelog": "Catatan Perubahan",
     "collapse": "Tutup",
     "welcomeDescription": "Selamat datang di Sen - Alat Modifikasi PvZ2",
     "aboutDescription": "Pelajari lebih lanjut tentang Sen dan fitur-fiturnya",
     "downloadDescription": "Unduh Sen untuk platform Anda",
-    "resourcesDescription": "Akses sumber daya peta dunia untuk modding PvZ2",
-    "changelogDescription": "Lihat catatan rilis dan pembaruan"
+    "resourcesDescription": "Akses sumber daya peta dunia untuk modding PvZ2"
   },
   "hero": {
     "tagline": "Bangun mod PvZ2 Anda lebih cepat dengan Sen!",
@@ -40,38 +34,39 @@
   },
   "about": {
     "pageTitle": "Tentang Sen - Alat Modifikasi PvZ2",
-    "mainTitle": "Sen.Environment",
-    "subtitle": "Alat modifikasi terbaik untuk PvZ2",
-    "sections": {
-      "about": {
-        "title": "Tentang",
-        "description": "Sen.Environment adalah alat modifikasi untuk PvZ2, dirancang untuk menyederhanakan proses modifikasi dan meningkatkan pengalaman bermain game."
+    "mainTitle": "Tentang Proyek",
+    "subtitle": "Ruang kerja visual untuk kustomisasi PvZ2.",
+    "overview": {
+      "title": "Ringkasan Proyek",
+      "p1": "Sen adalah editor visual dan rangkaian utilitas yang dibuat untuk menyederhanakan kustomisasi Plants vs. Zombies 2. Ini mempermudah proses modifikasi dengan mengganti pengeditan file manual dengan kontrol visual terstruktur.",
+      "p2": "Baik Anda merancang peta, melihat animasi, atau memproses file game, Sen menyediakan lingkungan terpusat untuk alur kerja Anda."
+    },
+    "features": {
+      "title": "Fitur Utama",
+      "mapEditor": {
+        "title": "Editor Peta",
+        "desc": "Rancang pengaturan halaman rumput dan simpul peta visual."
       },
-      "platform": {
-        "title": "Dukungan Platform",
-        "windows": "Windows 10+",
-        "windowsDescription": "Sen.Environment sepenuhnya kompatibel dengan Windows, memberikan pengalaman mulus untuk memodifikasi PvZ2.",
-        "android": "Android 10.0+",
-        "androidDescription": "Sen.Environment juga tersedia di Android, memungkinkan pengguna menikmati modifikasi di platform pilihan mereka."
+      "assets": {
+        "title": "Penampil Animasi",
+        "desc": "Pratinjau lembar sprite, periksa status animasi, dan periksa partikel."
       },
-      "modules": {
-        "title": "Modul",
-        "kernel": "Kernel",
-        "kernelDescription": "Inti Sen.Environment, menyediakan fungsionalitas penting dan operasi tingkat rendah.",
-        "shell": "Shell",
-        "shellDescription": "Antarmuka pengguna untuk pemrosesan perintah dan interaksi dengan kernel.",
-        "script": "Script",
-        "scriptDescription": "Modul untuk kemampuan otomasi dan skrip, memungkinkan pengguna membuat skrip khusus.",
-        "modding": "Modifikasi",
-        "moddingDescription": "Modul untuk modifikasi dan pengelolaan file permainan, memungkinkan pengguna membuat dan mengelola mod dengan mudah."
-      },
-      "tech": {
-        "title": "Teknologi yang Digunakan",
-        "meson": "Meson",
-        "mesonDescription": "Meson adalah sistem build yang dirancang untuk cepat dan ramah pengguna. Ini digunakan untuk membangun proyek Sen.",
-        "flutter": "Flutter",
-        "flutterDescription": "Flutter adalah toolkit UI yang digunakan untuk membangun proyek Sen. Ini memungkinkan Anda membangun antarmuka pengguna yang indah dan responsif untuk aplikasi mobile, web, dan desktop."
+      "automation": {
+        "title": "Pemroses File Game",
+        "desc": "Proses, urai, dan modifikasi sumber daya game PvZ2."
       }
+    },
+    "details": {
+      "title": "Detail Proyek",
+      "release": "Rilis Terbaru",
+      "stable": "Stabil",
+      "compatibility": "Kompatibilitas"
+    },
+    "support": {
+      "title": "Dukungan & Umpan Balik",
+      "text": "Sen dikembangkan secara aktif. Jika Anda menemukan bug, butuh bantuan, atau ingin menyarankan fitur baru, bergabunglah dengan Discord kami atau laporkan masalah di GitHub.",
+      "issuesButton": "Laporkan Masalah",
+      "discordButton": "Server Discord"
     }
   },
   "download": {
@@ -127,11 +122,31 @@
         "title": "Luncurkan Sen",
         "description": "Setelah diinstal, Anda dapat meluncurkan Sen dari desktop atau menu Mulai Anda."
       }
-    }
-  },
-  "changelog": {
-    "title": "Catatan Perubahan",
-    "subtitle": "Tetap diperbarui dengan perubahan dan peningkatan terbaru"
+    },
+    "thankYou": {
+      "title": "Terima kasih telah mengunduh Sen!",
+      "description": "Unduhan Anda telah dimulai. Bergabunglah dengan komunitas Discord kami untuk terhubung dengan modder lain, mendapatkan bantuan, dan membagikan karya Anda!",
+      "discordButton": "Gabung Discord",
+      "closeButton": "Selesai"
+    },
+    "assets": {
+      "scg": {
+        "title": "SCG Downloader",
+        "description": "Aplikasi sederhana untuk mengunduh SCG ke mod Anda."
+      },
+      "modding": {
+        "title": "Modding",
+        "description": "Buka lebih banyak potensi modding dengan Animation Viewer & Map Editor."
+      },
+      "main": {
+        "title": "Alat Utama",
+        "description": "Untuk memproses file game."
+      }
+    },
+    "failedToLoad": "Gagal memuat unduhan: {error}",
+    "noDownloads": "Tidak ada unduhan yang tersedia saat ini.",
+    "file": "file",
+    "files": "file"
   },
   "resources": {
     "title": "Sumber Daya Peta Dunia",
@@ -154,7 +169,6 @@
     "links": {
       "home": "Beranda",
       "download": "Unduh",
-      "changelog": "Catatan Perubahan",
       "resources": "Sumber Daya",
       "contact": "Hubungi Kami",
       "documentation": "Dokumentasi",
@@ -170,9 +184,7 @@
     "goHome": "Pergi ke Halaman Beranda",
     "visitDownloads": "Kunjungi Unduhan",
     "helpText": "Butuh bantuan? Lihat",
-    "aboutPage": "Halaman tentang",
-    "or": "atau lihat",
-    "changelogLink": "Catatan Perubahan"
+    "aboutPage": "Halaman tentang"
   },
   "common": {
     "loading": "Memuat...",
@@ -191,5 +203,53 @@
     "sort": "Sortir",
     "version": "Versi",
     "sen": "Sen"
+  },
+  "home": {
+    "features": {
+      "title": "Bebaskan Potensi Modding Anda",
+      "subtitle": "Temukan alat-alat canggih yang dirancang untuk membuat modding PvZ2 menjadi intuitif, cepat, dan mudah diakses.",
+      "mapEditor": {
+        "title": "Editor Peta",
+        "description": "Desain koneksi node peta kustom, halaman rumput, dan pengaturan level secara visual."
+      },
+      "animEditor": {
+        "title": "Penampil Animasi",
+        "description": "Pratinjau spritesheet, periksa status animasi, dan periksa konfigurasi partikel."
+      },
+      "scripting": {
+        "title": "Pemroses Berkas Game",
+        "description": "Proses, uraikan, dan edit berkas data game serta aset game."
+      },
+      "modManager": {
+        "title": "Pengemas Sumber Daya Game",
+        "description": "Kompilasi dan kemas sumber daya serta aset game PvZ2 ke dalam format yang siap didistribusikan."
+      },
+      "versionManager": {
+        "title": "Pengalih Versi",
+        "description": "Kelola beberapa instalasi game dan beralih versi dengan lancar untuk menguji kompatibilitas mod Anda."
+      },
+      "crossPlatform": {
+        "title": "Dukungan Lintas Platform",
+        "description": "Lakukan modding pada setup pilihan Anda dengan kompatibilitas penuh di desktop Windows dan perangkat Android."
+      }
+    },
+    "faq": {
+      "title": "Pertanyaan yang Sering Diajukan",
+      "subtitle": "Semua yang perlu Anda ketahui tentang alat modding Sen PvZ2.",
+      "q1": "Apakah saya memerlukan pengetahuan coding untuk menggunakan Sen?",
+      "a1": "Tidak! Sen dirancang untuk menjadi visual. Anda dapat mengedit peta, melihat pratinjau animasi, dan memproses berkas game menggunakan antarmuka interaktif kami.",
+      "q2": "Platform apa saja yang didukung oleh Sen?",
+      "a2": "Sen berjalan dengan lancar di Windows 10/11 dan Android 8.0+. Anda dapat mengedit dan menguji mod Anda di platform desktop dan seluler.",
+      "q3": "Bagaimana dukungan untuk Sen disediakan?",
+      "a3": "Sen diperbarui secara aktif. Jika Anda menemui masalah atau butuh bantuan, bergabunglah dengan server Discord kami atau buat laporan masalah di GitHub.",
+      "q4": "Bagaimana cara mengimpor aset atau sumber daya peta?",
+      "a4": "Anda dapat mengunduh paket aset peta lengkap dari tab Sumber Daya kami dan menghubungkannya langsung di menu pengaturan Sen."
+    },
+    "community": {
+      "title": "Bergabunglah dengan Komunitas Modding Kami",
+      "description": "Terhubung dengan ribuan modder PvZ2, bagikan kreasi Anda, dapatkan templat, dan dapatkan bantuan dari kreator berpengalaman.",
+      "discordButton": "Gabung ke Server Discord",
+      "githubButton": "Kirim Umpan Balik"
+    }
   }
 }

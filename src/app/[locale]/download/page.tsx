@@ -24,22 +24,32 @@ export default function DownloadPage() {
     }));
 
   return (
-    <div className="w-full">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-        <div className="mb-6">
-          <h1 className="text-2xl sm:text-3xl font-bold mb-2">{t("download.title")}</h1>
-          <p className="text-muted-foreground">{t("download.subtitle")}</p>
+    <div className="w-full min-h-screen">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 max-w-6xl">
+        <div className="mb-10 text-center sm:text-left">
+          <h1 className="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+            {t("download.title")}
+          </h1>
+          <p className="text-sm sm:text-base text-muted-foreground max-w-xl">
+            {t("download.subtitle")}
+          </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-12">
           <DownloadList
             assets={assets}
             version={release?.tag_name || "LTS"}
             isLoading={isLoading}
             error={error?.message}
           />
-          <SystemRequirements />
-          <InstallationGuide />
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div className="lg:col-span-6 h-full">
+              <SystemRequirements />
+            </div>
+            <div className="lg:col-span-6 h-full">
+              <InstallationGuide />
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

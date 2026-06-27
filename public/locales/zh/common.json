@@ -11,10 +11,6 @@
       "title": "下载 Sen | Sen - PvZ2 Modding工具",
       "description": "为 Windows、Android 和其他平台下载 Sen。获取最新版本，立即开始 modding PvZ2！"
     },
-    "changelog": {
-      "title": "更改日志 | Sen - PvZ2 Modding工具",
-      "description": "查看 Sen 的完整更改日志。查看所有更新、新功能、错误修复以及所有版本的改进。"
-    },
     "notFound": {
       "title": "404 - 找不到页面 | Sen",
       "description": "您要查找的页面不存在。"
@@ -25,13 +21,11 @@
     "about": "关于",
     "download": "下载",
     "resources": "资源",
-    "changelog": "更改日志",
     "collapse": "收起",
     "welcomeDescription": "欢迎来到 Sen - PvZ2 Modding工具",
     "aboutDescription": "了解更多关于 Sen 及其功能",
     "downloadDescription": "为您的平台下载 Sen",
-    "resourcesDescription": "访问 PvZ2 模组世界地图资源",
-    "changelogDescription": "查看发行说明和更新"
+    "resourcesDescription": "访问 PvZ2 模组世界地图资源"
   },
   "hero": {
     "tagline": "使用 Sen 更快地构建你的 PvZ2 mod！",
@@ -40,39 +34,40 @@
     "discordButton": "Discord 服务器"
   },
   "about": {
-    "pageTitle": "关于 Sen - PvZ2 Modding工具",
-    "mainTitle": "Sen.Environment",
-    "subtitle": "PvZ2 的终极 modding 工具",
-    "sections": {
-      "about": {
-        "title": "关于",
-        "description": "Sen.Environment 是 PvZ2 的 modding 工具，旨在简化 modding 过程并增强游戏体验。"
+    "pageTitle": "关于 Sen - PvZ2 Mod 工具",
+    "mainTitle": "关于项目",
+    "subtitle": "PvZ2 自定义的直观工作区。",
+    "overview": {
+      "title": "项目概述",
+      "p1": "Sen 是一款旨在简化 Plants vs. Zombies 2 自定义的直观编辑器和实用工具包。它通过结构化的直观控件取代手动文件编辑，从而简化了 Mod 制作流程。",
+      "p2": "无论是设计地图、查看动画还是处理游戏文件，Sen 都能为您提供集中的工作区。"
+    },
+    "features": {
+      "title": "核心功能",
+      "mapEditor": {
+        "title": "地图编辑器",
+        "desc": "设计草坪设置和直观的地图节点。"
       },
-      "platform": {
-        "title": "平台支持",
-        "windows": "Windows 10+",
-        "windowsDescription": "Sen.Environment 与 Windows 完全兼容，为 PvZ2 modding 提供无缝体验。",
-        "android": "Android 10.0+",
-        "androidDescription": "Sen.Environment 也可在 Android 上使用，允许用户在其首选平台上享受 modding。"
+      "assets": {
+        "title": "动画查看器",
+        "desc": "预览精灵表（spritesheets）、检查动画状态并检查粒子效果。"
       },
-      "modules": {
-        "title": "模块",
-        "kernel": "内核",
-        "kernelDescription": "Sen.Environment 的核心，提供基本功能和低级操作。",
-        "shell": "外壳",
-        "shellDescription": "用于命令处理和与内核交互的用户界面。",
-        "script": "脚本",
-        "scriptDescription": "用于自动化和脚本编写功能的模块，允许用户创建自定义脚本。",
-        "modding": "Modding",
-        "moddingDescription": "用于游戏文件修改和管理的模块，允许用户轻松创建和管理 mod。"
-      },
-      "tech": {
-        "title": "使用的技术",
-        "meson": "Meson",
-        "mesonDescription": "Meson 是一个设计快速且用户友好的构建系统。它用于构建 Sen 项目。",
-        "flutter": "Flutter",
-        "flutterDescription": "Flutter 是一个用于构建 Sen 项目的 UI 工具包。它允许您为移动、网络和桌面应用程序构建漂亮且响应迅速的用户界面。"
+      "automation": {
+        "title": "游戏文件处理器",
+        "desc": "处理、解析和修改 PvZ2 游戏资源。"
       }
+    },
+    "details": {
+      "title": "项目细节",
+      "release": "最新版本",
+      "stable": "稳定版",
+      "compatibility": "兼容性"
+    },
+    "support": {
+      "title": "支持与反馈",
+      "text": "Sen 正在积极开发中。如果您遇到 Bug、需要帮助或想提出建议，请加入我们的 Discord 或在 GitHub 上报告问题。",
+      "issuesButton": "报告问题",
+      "discordButton": "Discord 服务器"
     }
   },
   "download": {
@@ -128,11 +123,31 @@
         "title": "启动 Sen",
         "description": "安装后，您可以从桌面或开始菜单启动 Sen。"
       }
-    }
-  },
-  "changelog": {
-    "title": "更改日志",
-    "subtitle": "了解最新的更改和改进"
+    },
+    "thankYou": {
+      "title": "感谢您下载 Sen！",
+      "description": "您的下载已开始。加入我们的 Discord 社区，与其他 mod 创作者交流、获取支持并分享您的作品！",
+      "discordButton": "加入 Discord",
+      "closeButton": "完成"
+    },
+    "assets": {
+      "scg": {
+        "title": "SCG 下载器",
+        "description": "一个用于下载 SCG 到你的 mod 的应用程序。"
+      },
+      "modding": {
+        "title": "Modding 工具",
+        "description": "通过动画查看器和地图编辑器解锁更多 modding 潜力。"
+      },
+      "main": {
+        "title": "主工具",
+        "description": "用于处理游戏文件。"
+      }
+    },
+    "failedToLoad": "加载下载失败：{error}",
+    "noDownloads": "目前没有可用的下载。",
+    "file": "个文件",
+    "files": "个文件"
   },
   "resources": {
     "title": "世界地图资源",
@@ -155,7 +170,6 @@
     "links": {
       "home": "首页",
       "download": "下载",
-      "changelog": "更改日志",
       "resources": "资源",
       "contact": "联系我们",
       "documentation": "文档",
@@ -171,9 +185,7 @@
     "goHome": "转到主页",
     "visitDownloads": "访问下载",
     "helpText": "需要帮助？查看我们的",
-    "aboutPage": "关于页面",
-    "or": "或查看",
-    "changelogLink": "更改日志"
+    "aboutPage": "关于页面"
   },
   "common": {
     "loading": "加载中...",
@@ -192,5 +204,53 @@
     "sort": "排序",
     "version": "版本",
     "sen": "Sen"
+  },
+  "home": {
+    "features": {
+      "title": "释放你的 Mod 制作潜力",
+      "subtitle": "发现强大的工具，旨在让 PvZ2 Mod 制作变得直观、快速且易于上手。",
+      "mapEditor": {
+        "title": "地图编辑器",
+        "description": "可视化设计自定义地图节点连接、草坪和关卡设置。"
+      },
+      "animEditor": {
+        "title": "动画查看器",
+        "description": "预览精灵图表（spritesheet）、检查动画状态并检查粒子配置。"
+      },
+      "scripting": {
+        "title": "游戏文件处理器",
+        "description": "处理、解析和编辑游戏数据文件与游戏资产。"
+      },
+      "modManager": {
+        "title": "游戏资源打包器",
+        "description": "将 PvZ2 游戏资源和资产包装并打包成分发就绪的格式。"
+      },
+      "versionManager": {
+        "title": "版本切换器",
+        "description": "管理多个游戏安装，并无缝切换版本以测试你的 Mod 兼容性。"
+      },
+      "crossPlatform": {
+        "title": "跨平台支持",
+        "description": "在您首选的设备上进行 Mod 制作，完全兼容 Windows 桌面和 Android 设备。"
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "subtitle": "关于 Sen PvZ2 Mod 制作工具您需要了解的一切。",
+      "q1": "使用 Sen 需要编程知识吗？",
+      "a1": "不需要！Sen 旨在实现可视化。您可以使用我们的交互式界面编辑地图、预览动画并处理游戏文件。",
+      "q2": "Sen 支持哪些平台？",
+      "a2": "Sen 在 Windows 10/11 和 Android 8.0+ 上运行流畅。您可以在桌面和移动平台上编辑和测试您的 Mod。",
+      "q3": "Sen 的支持服务如何？",
+      "a3": "Sen 会积极更新。如果您遇到问题或需要帮助，请加入我们的 Discord 服务器或在 GitHub 上提交问题报告。",
+      "q4": "如何导入资产或地图资源？",
+      "a4": "您可以从我们的“资源”选项卡下载完整的地图资产包，并直接在 Sen 的设置菜单中进行关联。"
+    },
+    "community": {
+      "title": "加入我们的 Mod 社区",
+      "description": "与数千名 PvZ2 Mod 创作者建立联系，分享您的作品，获取模板，并获得资深创作人员的帮助。",
+      "discordButton": "加入 Discord 服务器",
+      "githubButton": "提交反馈"
+    }
   }
 }

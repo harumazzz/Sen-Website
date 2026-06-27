@@ -6,11 +6,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Sen - PvZ2 Modding Tool",
   description:
-    "Learn about Sen, the all-in-one PvZ2 modding tool. Discover our features, supported modules, technology stack, and platform availability.",
-  keywords: ["Sen about", "PvZ2 modding", "modding tool features", "game modding", "open source"],
+    "Discover the mission, core pillars, and design philosophy behind Sen - the visual all-in-one PvZ2 modding tool.",
+  keywords: ["About Sen", "PvZ2 modding", "modding tool mission", "game modding community"],
   openGraph: {
     title: "About Sen - PvZ2 Modding Tool",
-    description: "Learn about Sen, the all-in-one PvZ2 modding tool with powerful features.",
+    description: "Discover the mission, core pillars, and design philosophy behind Sen.",
     type: "website",
   },
 };

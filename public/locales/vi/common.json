@@ -11,10 +11,6 @@
       "title": "Tải Sen | Sen - Công cụ Modding PvZ2",
       "description": "Tải Sen cho Windows, Android và các nền tảng khác. Nhận phiên bản mới nhất và bắt đầu modding PvZ2 ngay hôm nay!"
     },
-    "changelog": {
-      "title": "Nhật ký thay đổi | Sen - Công cụ Modding PvZ2",
-      "description": "Xem nhật ký thay đổi hoàn chỉnh của Sen. Xem tất cả các cập nhật, tính năng mới, sửa lỗi và cải tiến trên các phiên bản."
-    },
     "notFound": {
       "title": "404 - Trang không tìm thấy | Sen",
       "description": "Trang bạn đang tìm kiếm không tồn tại."
@@ -25,13 +21,11 @@
     "about": "Về",
     "download": "Tải xuống",
     "resources": "Tài Nguyên",
-    "changelog": "Nhật ký thay đổi",
     "collapse": "Thu gọn",
     "welcomeDescription": "Chào mừng đến Sen - Công cụ Modding PvZ2",
     "aboutDescription": "Tìm hiểu thêm về Sen và các tính năng của nó",
     "downloadDescription": "Tải xuống Sen cho nền tảng của bạn",
-    "resourcesDescription": "Truy cập tài nguyên bản đồ thế giới cho modding PvZ2",
-    "changelogDescription": "Xem ghi chú phát hành và cập nhật"
+    "resourcesDescription": "Truy cập tài nguyên bản đồ thế giới cho modding PvZ2"
   },
   "hero": {
     "tagline": "Xây dựng mod PvZ2 của bạn nhanh hơn với Sen!",
@@ -40,39 +34,40 @@
     "discordButton": "Máy chủ Discord"
   },
   "about": {
-    "pageTitle": "Về Sen - Công cụ Modding PvZ2",
-    "mainTitle": "Sen.Environment",
-    "subtitle": "Công cụ modding cuối cùng cho PvZ2",
-    "sections": {
-      "about": {
-        "title": "Về",
-        "description": "Sen.Environment là công cụ modding cho PvZ2, được thiết kế để đơn giản hóa quá trình modding và nâng cao trải nghiệm chơi game."
+    "pageTitle": "Về Sen - Công cụ Mod PvZ2",
+    "mainTitle": "Về Dự án",
+    "subtitle": "Không gian làm việc trực quan để tùy chỉnh PvZ2.",
+    "overview": {
+      "title": "Tổng quan Dự án",
+      "p1": "Sen là một trình soạn thảo trực quan và bộ công cụ được xây dựng để hợp lý hóa việc tùy chỉnh Plants vs. Zombies 2. Nó đơn giản hóa quá trình mod bằng cách thay thế việc chỉnh sửa tệp thủ công bằng các điều khiển trực quan có cấu trúc.",
+      "p2": "Cho dù bạn đang thiết kế bản đồ, xem hoạt ảnh hay xử lý tệp trò chơi, Sen đều cung cấp một môi trường tập trung."
+    },
+    "features": {
+      "title": "Tính năng Chính",
+      "mapEditor": {
+        "title": "Trình chỉnh sửa Bản đồ",
+        "desc": "Thiết kế cài đặt sân cỏ và các nút bản đồ trực quan."
       },
-      "platform": {
-        "title": "Hỗ trợ nền tảng",
-        "windows": "Windows 10+",
-        "windowsDescription": "Sen.Environment hoàn toàn tương thích với Windows, cung cấp trải nghiệm liền mạch để modding PvZ2.",
-        "android": "Android 10.0+",
-        "androidDescription": "Sen.Environment cũng có sẵn trên Android, cho phép người dùng thưởng thức modding trên nền tảng ưa thích của họ."
+      "assets": {
+        "title": "Trình xem Hoạt ảnh",
+        "desc": "Xem trước trang tính sprite, kiểm tra trạng thái hoạt ảnh và kiểm tra các hạt."
       },
-      "modules": {
-        "title": "Mô-đun",
-        "kernel": "Nhân",
-        "kernelDescription": "Lõi của Sen.Environment, cung cấp các chức năng thiết yếu và hoạt động cấp thấp.",
-        "shell": "Vỏ",
-        "shellDescription": "Giao diện người dùng để xử lý lệnh và tương tác với nhân.",
-        "script": "Kịch bản",
-        "scriptDescription": "Mô-đun để tự động hóa và khả năng kịch bản, cho phép người dùng tạo các kịch bản tùy chỉnh.",
-        "modding": "Modding",
-        "moddingDescription": "Mô-đun để sửa đổi và quản lý tệp trò chơi, cho phép người dùng dễ dàng tạo và quản lý các mod."
-      },
-      "tech": {
-        "title": "Công nghệ được sử dụng",
-        "meson": "Meson",
-        "mesonDescription": "Meson là một hệ thống xây dựng được thiết kế để nhanh chóng và thân thiện với người dùng. Nó được sử dụng để xây dựng dự án Sen.",
-        "flutter": "Flutter",
-        "flutterDescription": "Flutter là bộ công cụ giao diện người dùng được sử dụng để xây dựng dự án Sen. Nó cho phép bạn xây dựng giao diện người dùng đẹp và đáp ứng cho ứng dụng di động, web và máy tính để bàn."
+      "automation": {
+        "title": "Trình xử lý Tệp Trò chơi",
+        "desc": "Xử lý, phân tích cú pháp và sửa đổi tài nguyên trò chơi PvZ2."
       }
+    },
+    "details": {
+      "title": "Chi tiết Dự án",
+      "release": "Bản phát hành Mới nhất",
+      "stable": "Ổn định",
+      "compatibility": "Tương thích"
+    },
+    "support": {
+      "title": "Hỗ trợ & Góp ý",
+      "text": "Sen đang được phát triển tích cực. Nếu bạn gặp lỗi, cần trợ giúp hoặc muốn đề xuất tính năng, hãy tham gia Discord hoặc báo cáo sự cố trên GitHub.",
+      "issuesButton": "Báo cáo Sự cố",
+      "discordButton": "Máy chủ Discord"
     }
   },
   "download": {
@@ -128,11 +123,31 @@
         "title": "Khởi chạy Sen",
         "description": "Sau khi cài đặt, bạn có thể khởi chạy Sen từ máy tính để bàn hoặc menu Bắt đầu."
       }
-    }
-  },
-  "changelog": {
-    "title": "Nhật ký thay đổi",
-    "subtitle": "Cập nhật với các thay đổi và cải tiến mới nhất"
+    },
+    "thankYou": {
+      "title": "Cảm ơn bạn đã tải xuống Sen!",
+      "description": "Tệp của bạn đang được tải xuống. Hãy tham gia cộng đồng Discord của chúng tôi để kết nối với các modder khác, nhận hỗ trợ và chia sẻ các bản mod của bạn!",
+      "discordButton": "Tham gia Discord",
+      "closeButton": "Xong"
+    },
+    "assets": {
+      "scg": {
+        "title": "SCG Downloader",
+        "description": "Ứng dụng đơn giản để tải xuống SCG vào bản mod của bạn."
+      },
+      "modding": {
+        "title": "Modding",
+        "description": "Mở khóa thêm tiềm năng modding với Trình xem ảnh động & Trình chỉnh sửa bản đồ."
+      },
+      "main": {
+        "title": "Công cụ chính",
+        "description": "Dành cho việc xử lý các tệp trò chơi."
+      }
+    },
+    "failedToLoad": "Tải xuống thất bại: {error}",
+    "noDownloads": "Không có bản tải xuống nào khả dụng tại thời điểm này.",
+    "file": "tệp",
+    "files": "tệp"
   },
   "resources": {
     "title": "Tài Nguyên Bản Đồ Thế Giới",
@@ -155,7 +170,6 @@
     "links": {
       "home": "Trang chủ",
       "download": "Tải xuống",
-      "changelog": "Nhật ký thay đổi",
       "resources": "Tài Nguyên",
       "contact": "Liên hệ với chúng tôi",
       "documentation": "Tài liệu",
@@ -171,9 +185,7 @@
     "goHome": "Quay lại trang chủ",
     "visitDownloads": "Truy cập tải xuống",
     "helpText": "Cần giúp đỡ? Hãy xem",
-    "aboutPage": "Trang về",
-    "or": "hoặc xem",
-    "changelogLink": "Nhật ký thay đổi"
+    "aboutPage": "Trang về"
   },
   "common": {
     "loading": "Đang tải...",
@@ -192,5 +204,53 @@
     "sort": "Sắp xếp",
     "version": "Phiên bản",
     "sen": "Sen"
+  },
+  "home": {
+    "features": {
+      "title": "Khai phá Tiềm năng Mod của bạn",
+      "subtitle": "Khám phá các công cụ mạnh mẽ được xây dựng để giúp việc mod PvZ2 trở nên trực quan, nhanh chóng và dễ tiếp cận.",
+      "mapEditor": {
+        "title": "Trình chỉnh sửa Bản đồ",
+        "description": "Thiết kế trực quan các liên kết nút bản đồ tùy chỉnh, bãi cỏ và cài đặt màn chơi."
+      },
+      "animEditor": {
+        "title": "Trình xem Ảnh động",
+        "description": "Xem trước spritesheet, kiểm tra trạng thái hoạt ảnh và kiểm tra cấu hình hạt."
+      },
+      "scripting": {
+        "title": "Trình xử lý Tệp Trò chơi",
+        "description": "Xử lý, phân tích cú pháp và chỉnh sửa các tệp dữ liệu và tài nguyên trò chơi."
+      },
+      "modManager": {
+        "title": "Trình đóng gói Tài nguyên Trò chơi",
+        "description": "Biên dịch và đóng gói các tài nguyên và tài sản trò chơi PvZ2 thành các định dạng sẵn sàng phân phối."
+      },
+      "versionManager": {
+        "title": "Trình chuyển đổi Phiên bản",
+        "description": "Quản lý nhiều bản cài đặt trò chơi và chuyển đổi phiên bản liền mạch để kiểm tra khả năng tương thích của bản mod."
+      },
+      "crossPlatform": {
+        "title": "Hỗ trợ Đa nền tảng",
+        "description": "Mod trên thiết bị ưa thích của bạn với khả năng tương thích hoàn toàn giữa máy tính Windows và thiết bị Android."
+      }
+    },
+    "faq": {
+      "title": "Câu hỏi Thường gặp",
+      "subtitle": "Mọi điều bạn cần biết về công cụ mod Sen PvZ2.",
+      "q1": "Tôi có cần kiến thức lập trình để sử dụng Sen không?",
+      "a1": "Không! Sen được thiết kế trực quan. Bạn có thể chỉnh sửa bản đồ, xem trước hoạt ảnh và xử lý các tệp trò chơi bằng giao diện tương tác của chúng tôi.",
+      "q2": "Sen hỗ trợ những nền tảng nào?",
+      "a2": "Sen hoạt động trơn tru trên Windows 10/11 và Android 8.0+. Bạn có thể chỉnh sửa và thử nghiệm các bản mod của mình trên cả nền tảng máy tính và di động.",
+      "q3": "Sen được hỗ trợ như thế nào?",
+      "a3": "Sen được cập nhật tích cực. Nếu bạn gặp sự cố hoặc cần trợ giúp, hãy tham gia máy chủ Discord của chúng tôi hoặc gửi báo cáo sự cố trên GitHub.",
+      "q4": "Làm cách nào để nhập tài nguyên hoặc dữ liệu bản đồ?",
+      "a4": "Bạn có thể tải xuống các gói tài nguyên bản đồ đầy đủ từ tab Tài nguyên (Resources) và liên kết trực tiếp chúng trong menu cài đặt của Sen."
+    },
+    "community": {
+      "title": "Tham gia Cộng đồng Mod của Chúng tôi",
+      "description": "Kết nối với hàng nghìn modder PvZ2, chia sẻ sáng tạo của bạn, nhận các mẫu và nhận trợ giúp từ những người sáng tạo có kinh nghiệm.",
+      "discordButton": "Tham gia Máy chủ Discord",
+      "githubButton": "Gửi Phản hồi"
+    }
   }
 }

@@ -1,7 +1,7 @@
 "use client";
 
-import { NavDrawer } from "@/components/navigation/nav-drawer";
-import { MobileMenu } from "@/components/navigation/mobile-menu";
+import { AppBar } from "@/components/navigation/app-bar";
+import { BottomNav } from "@/components/navigation/bottom-nav";
 import { PageTransition } from "@/components/animations/page-transition";
 
 interface AppShellProps {
@@ -10,27 +10,21 @@ interface AppShellProps {
 
 export function AppShell({ children }: AppShellProps) {
   return (
-    <div className="flex min-h-screen">
-      {/* Desktop Navigation Drawer */}
-      <NavDrawer />
+    <div className="flex flex-col min-h-screen">
+      {/* Desktop: sticky top AppBar */}
+      <AppBar />
 
-      {/* Main Content Area */}
-      <div className="flex-1 flex flex-col lg:ml-64">
-        {/* Mobile App Bar */}
-        <header className="lg:hidden sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-          <div className="flex h-14 items-center px-4">
-            <MobileMenu />
-            <h1 className="text-lg font-semibold">Website</h1>
-          </div>
-        </header>
+      {/* Page content
+          lg:pt-20     → clears the floating AppBar (h-14 + pt-3 gap) on desktop
+          pb-24 lg:pb-0 → clears the floating BottomNav (h-16 + pb-3 gap) on mobile */}
+      <main className="flex-1 lg:pt-20 pb-24 lg:pb-0">
+        <PageTransition>
+          <div className="w-full">{children}</div>
+        </PageTransition>
+      </main>
 
-        {/* Page Content with Transitions */}
-        <main className="flex-1">
-          <PageTransition>
-            <div className="w-full">{children}</div>
-          </PageTransition>
-        </main>
-      </div>
+      {/* Mobile: fixed bottom BottomNav */}
+      <BottomNav />
     </div>
   );
 }

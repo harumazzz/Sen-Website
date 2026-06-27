@@ -3,7 +3,7 @@
  * Centralized routing configuration with metadata and navigation structure
  */
 
-import { Home, Info, Download, Puzzle, FileText, FolderOpen, LucideIcon } from "lucide-react";
+import { Home, Info, Download, FolderOpen, LucideIcon } from "lucide-react";
 
 /**
  * Route paths
@@ -14,7 +14,6 @@ export const ROUTES = {
   DOWNLOAD: "/download",
   RESOURCES: "/resources",
   EXTENSION: "/extension",
-  CHANGELOG: "/changelog",
 } as const;
 
 export type Route = (typeof ROUTES)[keyof typeof ROUTES];
@@ -58,12 +57,6 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     icon: FolderOpen,
     description: "nav.resourcesDescription",
   },
-  {
-    label: "nav.changelog",
-    href: ROUTES.CHANGELOG,
-    icon: FileText,
-    description: "nav.changelogDescription",
-  },
 ];
 
 /**
@@ -94,11 +87,6 @@ export const ROUTE_METADATA = {
     title: "Extensions | Sen - PvZ2 Modding Tool",
     description:
       "Explore Sen extensions and mods. Enhance your modding experience with powerful extensions and community-created content.",
-  },
-  [ROUTES.CHANGELOG]: {
-    title: "Changelog | Sen - PvZ2 Modding Tool",
-    description:
-      "View the complete changelog of Sen. See all updates, new features, bug fixes, and improvements across versions.",
   },
 } as const;
 

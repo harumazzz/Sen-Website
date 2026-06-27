@@ -36,7 +36,7 @@ export function SocialLinks({ className }: SocialLinksProps) {
         return (
           <Button
             key={social.name}
-            variant="ghost"
+            variant="subtle"
             size="icon"
             asChild
             className="h-9 w-9 hover:bg-accent"

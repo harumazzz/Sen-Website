@@ -59,10 +59,6 @@ export default function NotFound() {
               {t("notFound.helpText")}{" "}
               <Link href={ROUTES.ABOUT} className="text-primary hover:underline">
                 {t("notFound.aboutPage")}
-              </Link>{" "}
-              {t("notFound.or")}{" "}
-              <Link href={ROUTES.CHANGELOG} className="text-primary hover:underline">
-                {t("notFound.changelogLink")}
               </Link>
               .
             </p>
