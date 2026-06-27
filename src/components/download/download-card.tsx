@@ -45,7 +45,7 @@ function LinuxIcon({ className }: { className?: string }) {
 const PLATFORM_META: Record<
   string,
   {
-    icon: (props: { className?: string }) => React.JSX.Element;
+    icon: React.ComponentType<{ className?: string }>;
     bgGradient: string;
     iconColor: string;
   }
