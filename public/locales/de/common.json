@@ -251,5 +251,12 @@
       "discordButton": "Tritt dem Discord-Server bei",
       "githubButton": "Feedback senden"
     }
+  },
+  "chat": {
+    "title": "Sen KI-Assistent",
+    "subtitle": "Präsentiert von Haruma",
+    "welcome": "Hallo! Ich bin Sen KI, dein PvZ2-Modding-Assistent. Wie kann ich dir heute helfen?",
+    "placeholder": "Frag Sen KI...",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut."
   }
 }

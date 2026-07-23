@@ -252,5 +252,12 @@
       "discordButton": "加入 Discord 服务器",
       "githubButton": "提交反馈"
     }
+  },
+  "chat": {
+    "title": "Sen AI 助手",
+    "subtitle": "由 Haruma 提供技术支持",
+    "welcome": "你好！我是 Sen AI，你的 PvZ2 模组制作助手。今天有什么我可以帮你的？",
+    "placeholder": "咨询 Sen AI...",
+    "error": "发生了一些错误。请稍后重试。"
   }
 }

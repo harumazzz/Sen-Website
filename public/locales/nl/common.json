@@ -252,5 +252,12 @@
       "discordButton": "Lid worden van Discord-server",
       "githubButton": "Feedback indienen"
     }
+  },
+  "chat": {
+    "title": "Sen AI-assistent",
+    "subtitle": "Mogelijk gemaakt door Haruma",
+    "welcome": "Hallo! Ik ben Sen AI, je PvZ2-moddingassistent. Hoe kan ik je vandaag helpen?",
+    "placeholder": "Vraag Sen AI...",
+    "error": "Er is iets misgegaan. Probeer het opnieuw."
   }
 }

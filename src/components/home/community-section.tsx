@@ -3,14 +3,13 @@
 import Link from "next/link";
 import { useTranslation } from "@/hooks/use-translation";
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Github } from "lucide-react";
+import { MessageCircle, GitBranch } from "lucide-react";
 import { SOCIAL_LINKS } from "@/lib/constants";
 import { FadeIn } from "@/components/animations/fade-in";
 
 export function CommunitySection() {
   const t = useTranslation();
-  
-  // Use the active Discord link from HeroSection
+
   const discordUrl = "https://discord.gg/DxDmVDMdrq";
   const githubUrl = SOCIAL_LINKS.GITHUB;
 
@@ -49,7 +48,7 @@ export function CommunitySection() {
                 className="w-full sm:w-auto gap-2.5 font-semibold border-border/80 hover:bg-muted/80 transition-all"
               >
                 <Link href={githubUrl} target="_blank" rel="noopener noreferrer">
-                  <Github className="h-5 w-5" />
+                  <GitBranch className="h-5 w-5" />
                   {t("home.community.githubButton")}
                 </Link>
               </Button>

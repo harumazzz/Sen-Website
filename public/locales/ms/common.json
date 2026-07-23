@@ -252,5 +252,12 @@
       "discordButton": "Sertai Pelayan Discord",
       "githubButton": "Hantar Maklum Balas"
     }
+  },
+  "chat": {
+    "title": "Pembantu AI Sen",
+    "subtitle": "Dikuasakan oleh Haruma",
+    "welcome": "Helo! Saya Sen AI, pembantu modifikasi PvZ2 anda. Bagaimana saya boleh membantu anda hari ini?",
+    "placeholder": "Tanya Sen AI...",
+    "error": "Sesuatu telah berlaku. Sila cuba lagi."
   }
 }

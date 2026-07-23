@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Github } from "lucide-react";
+import { GitBranch } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/ui/logo";
 import { Button } from "@/components/ui/button";
@@ -83,7 +83,7 @@ export function AppBar() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Github className="h-4 w-4" />
+              <GitBranch className="h-4 w-4" />
             </a>
           </Button>
           <ThemeToggle />

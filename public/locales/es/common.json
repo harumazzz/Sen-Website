@@ -252,5 +252,12 @@
       "discordButton": "Unirse al servidor de Discord",
       "githubButton": "Enviar comentarios"
     }
+  },
+  "chat": {
+    "title": "Asistente de IA Sen",
+    "subtitle": "Desarrollado por Haruma",
+    "welcome": "¡Hola! Soy Sen AI, tu asistente de modding de PvZ2. ¿Cómo te puedo ayudar hoy?",
+    "placeholder": "Pregúntale a Sen AI...",
+    "error": "Algo salió mal. Por favor, inténtalo de nuevo."
   }
 }

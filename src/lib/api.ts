@@ -1,4 +1,5 @@
 import type { ApiError, ApiResponse } from "./types";
+import axios, { AxiosInstance, AxiosRequestConfig } from "axios";
 
 const API_CONFIG = {
   baseURL: process.env.NEXT_PUBLIC_API_URL || "https://api.github.com",
@@ -20,85 +21,66 @@ export class APIError extends Error {
 }
 
 class ApiClient {
-  private baseURL: string;
-  private timeout: number;
-  private defaultHeaders: Record<string, string>;
+  private client: AxiosInstance;
 
   constructor(config: typeof API_CONFIG) {
-    this.baseURL = config.baseURL;
-    this.timeout = config.timeout;
-    this.defaultHeaders = config.headers;
+    this.client = axios.create({
+      baseURL: config.baseURL,
+      timeout: config.timeout,
+      headers: config.headers,
+    });
   }
 
-  private async fetch<T>(endpoint: string, options: RequestInit = {}): Promise<ApiResponse<T>> {
-    const url = endpoint.startsWith("http") ? endpoint : `${this.baseURL}${endpoint}`;
-
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), this.timeout);
-
+  private async request<T>(config: AxiosRequestConfig): Promise<ApiResponse<T>> {
     try {
-      const response = await fetch(url, {
-        ...options,
-        headers: {
-          ...this.defaultHeaders,
-          ...options.headers,
-        },
-        signal: controller.signal,
-      });
-
-      clearTimeout(timeoutId);
-
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}));
+      const response = await this.client.request<T>(config);
+      return { data: response.data };
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        if (error.code === "ECONNABORTED") {
+          throw new APIError("Request timeout", 408);
+        }
+        const status = error.response?.status;
+        const errorData = (error.response?.data as any) || {};
         throw new APIError(
-          errorData.message || `HTTP ${response.status}: ${response.statusText}`,
-          response.status,
+          errorData.message || error.message || `HTTP ${status}`,
+          status,
           errorData.code
         );
       }
 
-      const data = await response.json();
-      return { data };
-    } catch (error) {
-      if (error instanceof APIError) {
-        throw error;
-      }
-
       if (error instanceof Error) {
-        if (error.name === "AbortError") {
-          throw new APIError("Request timeout", 408);
-        }
         throw new APIError(error.message);
       }
 
       throw new APIError("An unknown error occurred");
-    } finally {
-      clearTimeout(timeoutId);
     }
   }
 
-  async get<T>(endpoint: string, options?: RequestInit): Promise<ApiResponse<T>> {
-    return this.fetch<T>(endpoint, { ...options, method: "GET" });
+  async get<T>(endpoint: string, options?: AxiosRequestConfig): Promise<ApiResponse<T>> {
+    return this.request<T>({ ...options, url: endpoint, method: "GET" });
   }
 
-  async post<T>(endpoint: string, body?: unknown, options?: RequestInit): Promise<ApiResponse<T>> {
-    return this.fetch<T>(endpoint, {
+  async post<T>(endpoint: string, body?: unknown, options?: AxiosRequestConfig): Promise<ApiResponse<T>> {
+    return this.request<T>({
       ...options,
+      url: endpoint,
       method: "POST",
-      body: JSON.stringify(body),
+      data: body,
     });
   }
 
-  async put<T>(endpoint: string, body?: unknown, options?: RequestInit): Promise<ApiResponse<T>> {
-    return this.fetch<T>(endpoint, {
+  async put<T>(endpoint: string, body?: unknown, options?: AxiosRequestConfig): Promise<ApiResponse<T>> {
+    return this.request<T>({
       ...options,
+      url: endpoint,
       method: "PUT",
-      body: JSON.stringify(body),
+      data: body,
     });
   }
 
-  async delete<T>(endpoint: string, options?: RequestInit): Promise<ApiResponse<T>> {
-    return this.fetch<T>(endpoint, { ...options, method: "DELETE" });
+  async delete<T>(endpoint: string, options?: AxiosRequestConfig): Promise<ApiResponse<T>> {
+    return this.request<T>({ ...options, url: endpoint, method: "DELETE" });
   }
 }
 

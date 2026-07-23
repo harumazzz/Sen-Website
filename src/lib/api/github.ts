@@ -1,26 +1,23 @@
 import { API_ENDPOINTS } from "@/lib/constants";
 import type { GitHubRelease } from "@/types";
+import axios from "axios";
 
 export async function fetchReleaseByTag(tag: string): Promise<GitHubRelease> {
   const url = `${API_ENDPOINTS.GITHUB_API}/repos/${API_ENDPOINTS.GITHUB_REPO}/releases/tags/${tag}`;
 
   try {
-    const response = await fetch(url, {
+    const response = await axios.get<GitHubRelease>(url, {
       headers: {
         Accept: "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
       },
-      next: {
-        revalidate: 3600,
-      },
     });
-    if (!response.ok) {
-      throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
-    }
-    const data = await response.json();
-    return data as GitHubRelease;
-  } catch (error) {
+    return response.data;
+  } catch (error: any) {
     console.error(`Error fetching release ${tag}:`, error);
+    if (axios.isAxiosError(error) && error.response) {
+      throw new Error(`GitHub API error: ${error.response.status} ${error.response.statusText}`);
+    }
     throw error;
   }
 }
@@ -33,24 +30,19 @@ export async function fetchLatestRelease(): Promise<GitHubRelease> {
   const url = `${API_ENDPOINTS.GITHUB_API}/repos/${API_ENDPOINTS.GITHUB_REPO}/releases/latest`;
 
   try {
-    const response = await fetch(url, {
+    const response = await axios.get<GitHubRelease>(url, {
       headers: {
         Accept: "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
       },
-      next: {
-        revalidate: 3600,
-      },
     });
 
-    if (!response.ok) {
-      throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
-    }
-
-    const data = await response.json();
-    return data as GitHubRelease;
-  } catch (error) {
+    return response.data;
+  } catch (error: any) {
     console.error("Error fetching latest release:", error);
+    if (axios.isAxiosError(error) && error.response) {
+      throw new Error(`GitHub API error: ${error.response.status} ${error.response.statusText}`);
+    }
     throw error;
   }
 }

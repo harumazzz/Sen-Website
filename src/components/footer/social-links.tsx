@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { Github, Twitter, MessageCircle } from "lucide-react";
+import { GitBranch, Globe, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SOCIAL_LINKS } from "@/lib/constants";
 
 const SOCIAL_ICONS = {
-  github: Github,
-  twitter: Twitter,
+  github: GitBranch,
+  twitter: Globe,
   discord: MessageCircle,
 } as const;
 

@@ -252,5 +252,12 @@
       "discordButton": "Tham gia Máy chủ Discord",
       "githubButton": "Gửi Phản hồi"
     }
+  },
+  "chat": {
+    "title": "Trợ lý AI Sen",
+    "subtitle": "Phát triển bởi Haruma",
+    "welcome": "Xin chào! Tôi là Sen AI, trợ lý modding PvZ2 của bạn. Hôm nay tôi có thể giúp gì cho bạn?",
+    "placeholder": "Hỏi Sen AI...",
+    "error": "Đã xảy ra lỗi. Vui lòng thử lại."
   }
 }

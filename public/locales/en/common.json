@@ -252,5 +252,12 @@
     "sort": "Sort",
     "version": "Version",
     "sen": "Sen"
+  },
+  "chat": {
+    "title": "Sen AI Assistant",
+    "subtitle": "Powered by Haruma",
+    "welcome": "Hello! I am Sen AI, your PvZ2 modding assistant. How can I help you today?",
+    "placeholder": "Ask Sen AI...",
+    "error": "Something went wrong. Please try again."
   }
 }

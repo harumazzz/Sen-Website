@@ -3,6 +3,7 @@
 import { AppBar } from "@/components/navigation/app-bar";
 import { BottomNav } from "@/components/navigation/bottom-nav";
 import { PageTransition } from "@/components/animations/page-transition";
+import { AIChatButton } from "@/components/ai-chat";
 
 interface AppShellProps {
   children: React.ReactNode;
@@ -25,6 +26,9 @@ export function AppShell({ children }: AppShellProps) {
 
       {/* Mobile: fixed bottom BottomNav */}
       <BottomNav />
+
+      {/* AI Chat Float Button & Widget */}
+      <AIChatButton />
     </div>
   );
 }

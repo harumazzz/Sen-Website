@@ -252,5 +252,12 @@
       "discordButton": "Dołącz do serwera Discord",
       "githubButton": "Prześlij opinię"
     }
+  },
+  "chat": {
+    "title": "Asystent AI Sen",
+    "subtitle": "Wspierane przez Haruma",
+    "welcome": "Cześć! Jestem Sen AI, Twój asystent ds. modowania PvZ2. W czym mogę Ci dzisiaj pomóc?",
+    "placeholder": "Zapytaj Sen AI...",
+    "error": "Coś poszło nie tak. Spróbuj ponownie."
   }
 }

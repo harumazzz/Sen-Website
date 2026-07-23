@@ -251,5 +251,12 @@
       "discordButton": "Gabung ke Server Discord",
       "githubButton": "Kirim Umpan Balik"
     }
+  },
+  "chat": {
+    "title": "Asisten AI Sen",
+    "subtitle": "Didukung oleh Haruma",
+    "welcome": "Halo! Saya Sen AI, asisten modding PvZ2 Anda. Apa yang bisa saya bantu hari ini?",
+    "placeholder": "Tanya Sen AI...",
+    "error": "Terjadi kesalahan. Silakan coba lagi."
   }
 }
