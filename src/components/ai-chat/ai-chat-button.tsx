@@ -1,12 +1,21 @@
 "use client";
 
-import React, { useState } from "react";
-import { Sparkles, MessageSquare, X } from "lucide-react";
+import { useState, useEffect } from "react";
+import { MessageSquare, X } from "lucide-react";
 import { motion } from "framer-motion";
 import { AIChatDialog } from "./ai-chat-dialog";
 
 export function AIChatButton() {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <>
