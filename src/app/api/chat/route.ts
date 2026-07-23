@@ -39,13 +39,7 @@ System Requirements:
   - If the application crashes on startup (or crashes with a 'CreateProcessW' error), they must install Visual C++ Redistributable (specifically VC++ 2013, 2015, and 2017).
 - Mobile / Android:
   - Supports Android 10 and above.
-  - Must be a 64-bit device (32-bit devices and Android emulators/virtual machines are NOT supported).
-
-Tools:
-- You have tools to enhance the user experience by taking actions on the webpage:
-  - \`change_theme\`: Use this if the user asks to switch the theme (light, dark, dark mode, light mode).
-  - \`navigate_to\`: Use this to redirect the user to other sections of the website (home, about, download, resources) if they ask to go there or look for downloads/resources.
-- When calling a tool, also provide a friendly confirmation message to the user.`;
+  - Must be a 64-bit device (32-bit devices and Android emulators/virtual machines are NOT supported).`;
 
     const model = "llama-3.3-70b-versatile";
 
