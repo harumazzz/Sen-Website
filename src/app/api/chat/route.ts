@@ -47,7 +47,7 @@ Tools:
   - \`navigate_to\`: Use this to redirect the user to other sections of the website (home, about, download, resources) if they ask to go there or look for downloads/resources.
 - When calling a tool, also provide a friendly confirmation message to the user.`;
 
-    const model = "llama-3.1-8b-instant";
+    const model = "llama-3.3-70b-versatile";
 
     const tools: OpenAI.Chat.Completions.ChatCompletionTool[] = [
       {
